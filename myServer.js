@@ -15,6 +15,9 @@ app.use(
   })
 );
 
+//Declaring the different routes that are available on my server
+app.use("/user", require("./routes/userRoute"));
+
 //Connecting to my database
 const MONGO_URI = process.env.MONGO_URI;
 mongoose.connect(
@@ -32,10 +35,6 @@ mongoose.connect(
     );
   }
 );
-
-app.get("/", (req, res) => {
-  res.json({ msg: "This is working!" });
-});
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
