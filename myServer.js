@@ -21,6 +21,7 @@ app.use(
 app.use("/user", require("./routes/userRoute"));
 app.use("/api", require("./routes/categoryRoute"));
 app.use("/api", require("./routes/upload"));
+app.use("/api", require("./routes/productRoute"));
 
 //Connecting to my database
 const MONGO_URI = process.env.MONGO_URI;
