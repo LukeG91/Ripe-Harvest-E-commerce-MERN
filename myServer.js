@@ -19,6 +19,7 @@ app.use(
 
 //Declaring the different routes that are available on my server
 app.use("/user", require("./routes/userRoute"));
+app.use("/api", require("./routes/categoryRoute"));
 
 //Connecting to my database
 const MONGO_URI = process.env.MONGO_URI;
