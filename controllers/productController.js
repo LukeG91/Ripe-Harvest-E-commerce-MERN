@@ -104,6 +104,7 @@ const productController = {
       await Products.findByIdAndDelete(req.params.id);
       res.json({ msg: "Deleted a product" });
     } catch (err) {
+      console.log(err);
       return res.status(500).json({ msg: err.message });
     }
   },

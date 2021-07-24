@@ -42,3 +42,6 @@ button{
 
 /* ----------------- Products ----------------- */
 @import url('./components/mainpages/products/products.css');
+
+/* ----------------- Product Details ----------------- */
+@import url('./components/mainpages/productDetail/productDetail.css');

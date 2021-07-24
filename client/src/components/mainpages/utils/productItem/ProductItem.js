@@ -14,14 +14,14 @@ function ProductItem({ product }) {
       <div className="product_box">
         <h2 title={product.title}>{product.title}</h2>
         <span>R{product.price}</span>
-        <span>R{product.description}</span>
+        <p>{product.description}</p>
       </div>
 
       <div className="row_btn">
         <Link id="btn_buy" to="#!">
           Buy
         </Link>
-        <Link id="btn_buy" to={`detail/${product._id}`}>
+        <Link id="btn_view" to={`detail/${product._id}`}>
           View
         </Link>
       </div>
