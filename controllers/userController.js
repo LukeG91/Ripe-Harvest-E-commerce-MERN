@@ -39,6 +39,7 @@ const userController = {
       });
 
       res.json({ accesstoken });
+      console.log(accesstoken);
     } catch (err) {
       return res.status(500).json({ msg: err.message });
     }
