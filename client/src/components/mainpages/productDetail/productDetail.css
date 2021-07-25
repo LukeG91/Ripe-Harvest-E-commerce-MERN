@@ -50,3 +50,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.productDetailComponentID{
+    font-size: 0.8rem;
+}
