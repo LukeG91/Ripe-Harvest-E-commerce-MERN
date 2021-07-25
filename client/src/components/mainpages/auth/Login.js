@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Login() {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
   return (
-    <div>
+    <div className="login-page">
       <h1>Login component</h1>
     </div>
   );
