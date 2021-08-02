@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BtnRender from "../productItem/BtnRender";
 
-function ProductItem({ product }) {
+function ProductItem({ product, isAdmin }) {
   return (
     <div className="product_card">
+      {
+        isAdmin && <input type="checkbox" checked={product.checked}/>
+      }
       <img
         src={product.images.url}
         alt=""
@@ -18,14 +21,7 @@ function ProductItem({ product }) {
         <p>{product.description}</p>
       </div>
 
-      {/* <div className="row_btn">
-        <Link id="btn_buy" to="#!">
-          Buy
-        </Link>
-        <Link id="btn_view" to={`/detail/${product._id}`}>
-          View
-        </Link>
-      </div> */}
+      
 
       <BtnRender product={product} />
     </div>
