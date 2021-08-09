@@ -14,7 +14,7 @@ code {
     monospace;
 }
 
-.App{
+.App {
   max-width: 1230px;
   min-height: 100vh;
   margin: 0 auto;
@@ -22,15 +22,15 @@ code {
   box-shadow: 0 0 35px #eee;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul li{
+ul li {
   list-style: none;
 }
 
-button{
+button {
   border: none;
   outline: none;
   background: transparent;
@@ -48,3 +48,6 @@ button{
 
 /* ----------------- Login & Registrations components ----------------- */
 @import url('./components/mainpages/auth/login.css');
+
+/* ---------------------------- Cart  --------------------------------- */
+@import url('./components/mainpages/cart/cart.css');
