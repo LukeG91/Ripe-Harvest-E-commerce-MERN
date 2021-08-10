@@ -23,6 +23,8 @@ function Header() {
       <>
         <li>
           <Link to="/create_product">Create Products</Link>
+        </li>
+        <li>
           <Link to="/category">Categories</Link>{" "}
         </li>
       </>
@@ -36,7 +38,10 @@ function Header() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/history">Product History</Link>
+          <Link to="/history">Order History</Link>
+        </li>
+        <li>
+          <Link to="/events">Upcoming events</Link>
         </li>
         <li>
           <Link to="/" onClick={logoutUser}>
