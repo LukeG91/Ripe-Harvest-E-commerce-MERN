@@ -33,7 +33,12 @@ function Header() {
     return (
       <>
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/history">Product History</Link>
+        </li>
+        <li>
           <Link to="/" onClick={logoutUser}>
             Logout
           </Link>
@@ -55,7 +60,7 @@ function Header() {
       </div>
       <ul>
         <li>
-          <Link to="/">{isAdmin ? "Products" : "Shop"}</Link>
+          <Link to="/shop">{isAdmin ? "Products" : "Shop"}</Link>
         </li>
         {isAdmin && adminRouter()}
         {isLogged ? (
@@ -63,10 +68,16 @@ function Header() {
         ) : (
           <>
             <li>
-              <Link to="/login">Login * Register</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/events">Upcoming events</Link>
+            </li>
+            <li>
+              <Link to="/login">Login || Register</Link>
             </li>
             <li>
               <Link to="/contact">Contact Us</Link>
