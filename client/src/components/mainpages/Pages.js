@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
 import Products from "./products/Products";
 import Login from "./auth/Login";
@@ -10,16 +10,24 @@ import About from "../../components/About";
 import Events from "../../components/Events";
 import Contact from "../../components/Contact";
 import Home from "../../components/Home";
+import { GlobalState } from "../../GlobalState";
 
 function Pages() {
+  const state = useContext(GlobalState);
+  const [isLogged] = state.userAPI.isLogged;
+
   return (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/shop" exact component={Products} />
       <Route path="/detail/:id" exact component={ProductDetail} />
 
-      <Route path="/login" exact component={Login} />
-      <Route path="/register" exact component={Register} />
+      <Route path="/login" exact component={isLogged ? NotFound : Login} />
+      <Route
+        path="/register"
+        exact
+        component={isLogged ? NotFound : Register}
+      />
       <Route path="/cart" exact component={Cart} />
       <Route path="/about" exact component={About}></Route>
       <Route path="/events" exact component={Events}></Route>
