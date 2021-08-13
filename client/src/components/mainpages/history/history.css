@@ -28,3 +28,9 @@ table a{
     color: rgb(3, 165, 206)
 }
 
+.history-page img{
+    width: 90px;
+    height: 110px;
+    object-fit: cover;
+}
+
