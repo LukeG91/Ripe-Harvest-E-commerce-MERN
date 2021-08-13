@@ -7,6 +7,7 @@ function ProductDetail() {
   const params = useParams();
   const state = useContext(GlobalState);
   const [products] = state.productsAPI.products;
+  const addCart = state.userAPI.addCart;
   const [productDetail, setProductDetail] = useState([]);
 
   useEffect(() => {
@@ -38,7 +39,11 @@ function ProductDetail() {
           <p>{productDetail.description}</p>
           <p>{productDetail.content}</p>
           <p>Items sold: {productDetail.sold}</p>
-          <Link to="/cart" className="cart">
+          <Link
+            to="/cart"
+            className="cart"
+            onClick={() => addCart(ProductDetail)}
+          >
             Buy Now
           </Link>
         </div>

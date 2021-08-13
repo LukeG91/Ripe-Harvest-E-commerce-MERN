@@ -1,4 +1,5 @@
 const Users = require("../models/userModel");
+const Payments = require("../models/paymentModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
@@ -107,19 +108,30 @@ const userController = {
   },
   addCart: async (req, res) => {
     try {
-      const user = await Users.findById(req.user.id)
-      if(!user) return res.status(400).json({msg: "User does not exist."})
-      
-      await Users.findOneAndUpdate({_id: req.user.id}, {
-        cart: req.body.cart
-      })
+      const user = await Users.findById(req.user.id);
+      if (!user) return res.status(400).json({ msg: "User does not exist." });
 
-      return res.json({msg: "Added to cart"})
+      await Users.findOneAndUpdate(
+        { _id: req.user.id },
+        {
+          cart: req.body.cart,
+        }
+      );
+
+      return res.json({ msg: "Added to cart" });
     } catch (error) {
       return res.status(500).json({ msg: err.message });
-
     }
-  }
+  },
+  history: async (req, res) => {
+    try {
+      const history = await Payments.find({ user_id: req.user.id });
+
+      res.json(history);
+    } catch (error) {
+      return res.status(500).json({ msg: err.message });
+    }
+  },
 };
 
 const createAccessToken = (user) => {

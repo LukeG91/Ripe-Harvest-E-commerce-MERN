@@ -21,7 +21,7 @@ function Cart() {
     getTotal();
   }, [cart]);
 
-  const addToCart = async () => {
+  const addToCart = async (cart) => {
     await axios.patch(
       "/user/addcart",
       { cart },
@@ -38,7 +38,7 @@ function Cart() {
       }
     });
     setCart([...cart]);
-    addToCart();
+    addToCart(cart);
   };
 
   const decrement = (id) => {
@@ -48,7 +48,7 @@ function Cart() {
       }
     });
     setCart([...cart]);
-    addToCart();
+    addToCart(cart);
   };
 
   const removeProduct = (id) => {
@@ -63,12 +63,24 @@ function Cart() {
         }
       });
       setCart([...cart]);
-      addToCart();
+      addToCart(cart);
     }
   };
 
   const tranSuccess = async (payment) => {
-    console.log(payment);
+    const { paymentID, address } = payment;
+
+    await axios.post(
+      "/api/payment",
+      { cart, paymentID, address },
+      {
+        headers: { Authorization: token },
+      }
+    );
+
+    setCart([]);
+    addToCart([]);
+    alert("You have successfully placed your order.");
   };
 
   if (cart.length === 0)

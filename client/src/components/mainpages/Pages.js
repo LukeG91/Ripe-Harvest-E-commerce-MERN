@@ -11,6 +11,7 @@ import Events from "../../components/Events";
 import Contact from "../../components/Contact";
 import Home from "../../components/Home";
 import { GlobalState } from "../../GlobalState";
+import OrderHistory from "../mainpages/history/OrderHistory";
 
 function Pages() {
   const state = useContext(GlobalState);
@@ -28,6 +29,11 @@ function Pages() {
         exact
         component={isLogged ? NotFound : Register}
       />
+      <Route
+        path="/history"
+        exact
+        component={isLogged ? OrderHistory : NotFound}
+      ></Route>
       <Route path="/cart" exact component={Cart} />
       <Route path="/about" exact component={About}></Route>
       <Route path="/events" exact component={Events}></Route>
