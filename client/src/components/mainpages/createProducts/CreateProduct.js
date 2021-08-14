@@ -20,11 +20,35 @@ function CreateProduct() {
   const [images, setImages] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const [isAdmin] = state.userAPI.isAdmin;
+  const handleUpload = async (e) => {
+    e.preventDefault();
+    try {
+      if (!isAdmin) return alert("You are not an Admin.");
+      const file = e.target.files[0];
+
+      if (!file) return alert("File does not exist.");
+
+      // if (file.size > 1024 * 1024) return alert("File too large.");
+
+      if (file.type !== "image/jpeg" && file.type !== "image/png")
+        return alert(
+          "Incorrect file format, only.png and .jpeg files are allowed."
+        );
+    } catch (error) {
+      alert(error.response.data.msg);
+    }
+  };
+
+  const styleUpload = {
+    display: images ? "block" : "none",
+  };
+
   return (
     <div className="create_product">
       <div className="upload">
-        <input type="file" name="file" id="file_up" />
-        <div id="file_img">
+        <input type="file" name="file" id="file_up" onChange={handleUpload} />
+        <div id="file_img" style={styleUpload}>
           <img src="" alt="" />
           <span>X</span>
         </div>
