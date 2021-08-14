@@ -29,24 +29,24 @@ function UserAPI(token) {
     }
   }, [token]);
 
-  useEffect(() => {
-    if (token) {
-      const getHistory = async () => {
-        if (isAdmin) {
-          const res = await axios.get("/api/payment", {
-            headers: { Authorization: token },
-          });
-          setHistory(res.data);
-        } else {
-          const res = await axios.get("/user/history", {
-            headers: { Authorization: token },
-          });
-          setHistory(res.data);
-        }
-      };
-      getHistory();
-    }
-  }, [token, callback, isAdmin]);
+  // useEffect(() => {
+  //   if (token) {
+  //     const getHistory = async () => {
+  //       if (isAdmin) {
+  //         const res = await axios.get("/api/payment", {
+  //           headers: { Authorization: token },
+  //         });
+  //         setHistory(res.data);
+  //       } else {
+  //         const res = await axios.get("/user/history", {
+  //           headers: { Authorization: token },
+  //         });
+  //         setHistory(res.data);
+  //       }
+  //     };
+  //     getHistory();
+  //   }
+  // }, [token, callback, isAdmin]);
 
   const addCart = async (product) => {
     if (!isLogged) return alert("Please login in order to purchase products.");
@@ -76,7 +76,6 @@ function UserAPI(token) {
     cart: [cart, setCart],
     addCart: addCart,
     history: [history, setHistory],
-    callback: [callback, setCallback],
   };
 }
 
