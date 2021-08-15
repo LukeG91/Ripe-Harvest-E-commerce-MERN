@@ -21,6 +21,8 @@ function CreateProduct() {
   const [loading, setLoading] = useState(false);
 
   const [isAdmin] = state.userAPI.isAdmin;
+  const [token] = state.token;
+
   const handleUpload = async (e) => {
     e.preventDefault();
     try {
@@ -35,9 +37,46 @@ function CreateProduct() {
         return alert(
           "Incorrect file format, only.png and .jpeg files are allowed."
         );
+
+      let formData = new FormData();
+      formData.append("file", file);
+
+      setLoading(true);
+      const res = await axios.post("/api/upload", formData, {
+        headers: {
+          "content-type": "multipart/form-data",
+          Authorization: token,
+        },
+      });
+
+      setLoading(false);
+      setImages(res.data);
     } catch (error) {
       alert(error.response.data.msg);
     }
+  };
+
+  const handleDestroy = async () => {
+    try {
+      if (!isAdmin) return alert("your not admin");
+      setLoading(true);
+      await axios.post(
+        "/api/destroy",
+        { public_id: images.public_id },
+        {
+          headers: { Authorization: token },
+        }
+      );
+      setLoading(false);
+      setImages(false);
+    } catch (error) {
+      alert(error.response.data.msg);
+    }
+  };
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+    setProduct({ ...product, [name]: value });
   };
 
   const styleUpload = {
@@ -48,10 +87,17 @@ function CreateProduct() {
     <div className="create_product">
       <div className="upload">
         <input type="file" name="file" id="file_up" onChange={handleUpload} />
-        <div id="file_img" style={styleUpload}>
-          <img src="" alt="" />
-          <span>X</span>
-        </div>
+
+        {loading ? (
+          <div id="file_img" style={styleUpload}>
+            <Loading />
+          </div>
+        ) : (
+          <div id="file_img" style={styleUpload}>
+            <img src={images ? images.url : ""} alt="" />
+            <span onClick={handleDestroy}>X</span>
+          </div>
+        )}
       </div>
 
       <form>
@@ -63,6 +109,7 @@ function CreateProduct() {
             id="product_id"
             required
             value={product.product_id}
+            onChange={handleChangeInput}
           />
         </div>
 
@@ -74,6 +121,7 @@ function CreateProduct() {
             id="title"
             required
             value={product.title}
+            onChange={handleChangeInput}
           />
         </div>
 
@@ -85,6 +133,7 @@ function CreateProduct() {
             id="price"
             required
             value={product.price}
+            onChange={handleChangeInput}
           />
         </div>
 
@@ -97,6 +146,7 @@ function CreateProduct() {
             required
             value={product.description}
             rows="5"
+            onChange={handleChangeInput}
           />
         </div>
 
@@ -109,12 +159,17 @@ function CreateProduct() {
             required
             value={product.content}
             rows="7"
+            onChange={handleChangeInput}
           />
         </div>
 
         <div className="row">
           <label htmlFor="categories">Categories: </label>
-          <select name="category" value={product.category}>
+          <select
+            name="category"
+            value={product.category}
+            onChange={handleChangeInput}
+          >
             <option value="">Please select a category</option>
             {categories.map((category) => (
               <option value={category._id} key={category._id}>
