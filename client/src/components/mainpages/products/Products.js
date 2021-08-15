@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { GlobalState } from "../../../GlobalState";
 import ProductItem from "../utils/productItem/ProductItem";
 import Loading from "../utils/loading/Loading";
@@ -8,17 +8,37 @@ function Products() {
   const state = useContext(GlobalState);
   const [products, setProducts] = state.productsAPI.products;
   const [isAdmin] = state.userAPI.isAdmin;
+  const [token] = state.token;
+  const [callback, setCallback] = state.productsAPI.callback;
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const getProducts = async () => {
-      const res = await axios.get("/api/products");
-      console.log(res.data.products);
-      setProducts(res.data.products);
-    };
-    getProducts();
-  }, [setProducts]);
+  const handleCheck = (id) => {
+    console.log(id);
+  };
 
-  console.log(products);
+  const deleteProduct = async (id, public_id) => {
+    console.log({ id, public_id });
+    // try {
+    //   setLoading(true);
+    //   const destroyImg = await axios.post(
+    //     "/api/destroy",
+    //     { public_id },
+    //     {
+    //       headers: { Authorization: token },
+    //     }
+    //   );
+    // const deleteProduct = await axios.delete(`/api/products/${id}`, {
+    //   headers: { Authorization: token },
+    // });
+    //   await destroyImg;
+    //   await deleteProduct;
+    //   setLoading(false);
+    //   setCallback(!callback);
+    // } catch (error) {
+    //   alert(error.response.data.msg);
+    // }
+  };
+
   return (
     <>
       <div className="products">
@@ -28,6 +48,8 @@ function Products() {
               key={product._id}
               product={product}
               isAdmin={isAdmin}
+              deleteProduct={deleteProduct}
+              handleCheck={handleCheck}
             />
           );
         })}
