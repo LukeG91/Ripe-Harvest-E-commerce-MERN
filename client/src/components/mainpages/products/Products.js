@@ -4,6 +4,7 @@ import ProductItem from "../utils/productItem/ProductItem";
 import Loading from "../utils/loading/Loading";
 import axios from "axios";
 import Filters from "./Filters";
+import LoadMore from "./LoadMore";
 
 function Products() {
   const state = useContext(GlobalState);
@@ -68,6 +69,7 @@ function Products() {
   return (
     <>
       <Filters />
+
       {isAdmin && (
         <div className="delete-all">
           <span>Select all</span>
@@ -75,6 +77,7 @@ function Products() {
           <button onClick={deleteAll}>Delete ALL</button>
         </div>
       )}
+
       <div className="products">
         {products.map((product) => {
           return (
@@ -88,6 +91,8 @@ function Products() {
           );
         })}
       </div>
+
+      <LoadMore />
       {products.length === 0 && <Loading />}
     </>
   );

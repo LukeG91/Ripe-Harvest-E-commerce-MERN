@@ -10,6 +10,7 @@ function Filters() {
 
   const handleCategory = (e) => {
     setCategory(e.target.value);
+    setSearch("");
   };
 
   return (
@@ -23,6 +24,24 @@ function Filters() {
               {category.name}
             </option>
           ))}
+        </select>
+      </div>
+
+      <input
+        type="text"
+        value={search}
+        placeholder="Enter your search criteria"
+        onChange={(e) => setSearch(e.target.value.toLowerCase())}
+      />
+
+      <div className="row">
+        <span>Sort By: </span>
+        <select value={sort} onChange={(e) => setSort(e.target.value)}>
+          <option value="">Newest</option>
+          <option value="sort=oldest">Oldest</option>
+          <option value="sort=-sold">Best sellers</option>
+          <option value="sort=-price">Price: High-Low</option>
+          <option value="sort=price">Price: Low-High</option>
         </select>
       </div>
     </div>
