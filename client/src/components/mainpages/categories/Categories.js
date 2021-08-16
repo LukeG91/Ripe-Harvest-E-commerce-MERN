@@ -1,4 +1,4 @@
-import { set } from "mongoose";
+// import { set } from "mongoose";
 import React, { useState, useContext } from "react";
 import { GlobalState } from "../../../GlobalState";
 import axios from "axios";
@@ -58,7 +58,7 @@ function Categories() {
       alert(res.data.msg);
       setCallback(!callback);
     } catch (error) {
-      alert(error.res.data.msg);
+      alert(error.response.data.msg);
     }
   };
 
