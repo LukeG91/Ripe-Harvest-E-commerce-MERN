@@ -53,4 +53,11 @@
 
 .productDetailComponentID{
     font-size: 0.8rem;
+    width: 65px;
+}
+
+.relatedProductsHeading{
+    margin-left: 4%;
+    text-decoration: underline;
+    font-size: 1.8rem;
 }
