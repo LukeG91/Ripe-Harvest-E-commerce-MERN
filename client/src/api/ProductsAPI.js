@@ -17,7 +17,6 @@ function ProductsAPI() {
           page * 9
         }&${category}&${sort}&title[regex]=${search}`
       );
-
       setProducts(res.data.products);
       setResult(res.data.result);
     };
