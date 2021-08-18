@@ -5,6 +5,7 @@ import Loading from "../utils/loading/Loading";
 import axios from "axios";
 import Filters from "./Filters";
 import LoadMore from "./LoadMore";
+import Footer from "../../footer/Footer";
 
 function Products() {
   const state = useContext(GlobalState);
@@ -94,6 +95,7 @@ function Products() {
 
       <LoadMore />
       {products.length === 0 && <Loading />}
+      <Footer />
     </>
   );
 }

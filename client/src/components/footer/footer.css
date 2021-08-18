@@ -1,0 +1,18 @@
+.footerParentDiv{
+    /* border: solid 2px black; */
+    height: 120px;
+}
+
+.footerMainDiv{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #548CA8;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 2px;
+    position: relative;
+    top: 75%;
+
+}

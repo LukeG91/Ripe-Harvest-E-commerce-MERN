@@ -1,5 +1,6 @@
 import React from "react";
 import HomeCarousel from "./carousel/Carousel";
+import Footer from "../footer/Footer";
 
 function Home() {
   return (
@@ -13,6 +14,9 @@ function Home() {
       </div>
       <div className="homeImageContainer">
         <HomeCarousel />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

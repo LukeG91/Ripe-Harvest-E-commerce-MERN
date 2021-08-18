@@ -6,7 +6,7 @@ import Register from "./auth/Register";
 import Cart from "./cart/Cart";
 import NotFound from "./utils/not_found/NotFound";
 import ProductDetail from "./productDetail/ProductDetail";
-import About from "../../components/About";
+import About from "../../components/about/About";
 import Events from "../../components/Events";
 import Contact from "../../components/Contact";
 import Home from "../../components/Home/Home";
