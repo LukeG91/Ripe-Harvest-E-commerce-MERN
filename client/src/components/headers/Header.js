@@ -65,8 +65,10 @@ function Header() {
       </div>
 
       <div className="logo">
-        <h1>
-          <Link to="/">{isAdmin ? "Admin" : "Ripe Harvest"}</Link>
+        <h1 className="headerComponentLogo">
+          <Link to="/" style={{ color: "#548CA8" }}>
+            {isAdmin ? "Admin" : "Ripe Harvest"}
+          </Link>
         </h1>
       </div>
       <ul style={styleMenu}>
