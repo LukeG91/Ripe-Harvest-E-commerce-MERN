@@ -1,0 +1,22 @@
+.subHomeContainer{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.carouselContainer{
+    width: 100%;
+    border: solid 1px black;
+}
+
+.newCarouselContainer{
+    border: solid 2px black;
+}
+
+.mainHomeContainer{
+    /* background-color: crimson; */
+}
+
+.homeImageContainer{
+    width: 100%;
+    height: 100%;
+}

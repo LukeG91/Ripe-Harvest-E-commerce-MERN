@@ -61,6 +61,9 @@ button {
 /* ---------------------------- Create Products  --------------------------------- */
 @import url("./components/mainpages/createProducts/createProducts.css");
 
+/* ---------------------------- Home page --------------------------------- */
+@import url("./components/Home/home.css");
+
 /* ---------------------------- Making the website responsive ---------------------------- */
 @media(max-width: 820px){
   header .logo{
