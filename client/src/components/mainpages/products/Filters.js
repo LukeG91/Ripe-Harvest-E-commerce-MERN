@@ -16,7 +16,7 @@ function Filters() {
   return (
     <div className="filter_menu">
       <div className="row">
-        <span>Filters: </span>
+        <span className="sortAndFilterHeadings">Filters: </span>
         <select name="category" value={category} onChange={handleCategory}>
           <option value="">All Products</option>
           {categories.map((category) => (
@@ -35,7 +35,7 @@ function Filters() {
       />
 
       <div className="row sort">
-        <span>Sort By: </span>
+        <span className="sortAndFilterHeadings">Sort By: </span>
         <select value={sort} onChange={(e) => setSort(e.target.value)}>
           <option value="">Newest</option>
           <option value="sort=oldest">Oldest</option>

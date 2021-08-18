@@ -70,3 +70,11 @@
     margin-bottom: 20px;
     border: 1px solid #555;
 }
+
+/* ====================== Filters page =================== */
+
+.sortAndFilterHeadings{
+    /* border: solid 1px black; */
+    padding-top: 10px;
+    padding-right: 3px;
+}

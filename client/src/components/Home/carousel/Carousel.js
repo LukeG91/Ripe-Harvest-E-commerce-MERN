@@ -106,3 +106,7 @@ function HomeCarousel() {
 }
 
 export default HomeCarousel;
+
+/* Resources used:
+https://reactjsexample.com/easy-to-use-responsive-and-customizable-carousel-component-for-react/
+*/
