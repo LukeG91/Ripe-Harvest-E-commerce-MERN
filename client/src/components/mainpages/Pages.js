@@ -8,7 +8,7 @@ import NotFound from "./utils/not_found/NotFound";
 import ProductDetail from "./productDetail/ProductDetail";
 import About from "../../components/about/About";
 import Events from "../../components/Events";
-import Contact from "../../components/Contact";
+import Contact from "../../components/contact/Contact";
 import Home from "../../components/Home/Home";
 import { GlobalState } from "../../GlobalState";
 import OrderHistory from "../mainpages/history/OrderHistory";

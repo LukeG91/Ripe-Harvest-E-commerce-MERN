@@ -70,6 +70,9 @@ button {
 /* ---------------------------- About page --------------------------------- */
 @import url("../src/components/about/about.css");
 
+/* ---------------------------- Contact page --------------------------------- */
+@import url("../src/components/contact/contact.css");
+
 /* ---------------------------- Making the website responsive ---------------------------- */
 @media(max-width: 820px){
   header .logo{
