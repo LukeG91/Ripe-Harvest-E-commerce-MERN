@@ -14,7 +14,7 @@ function About() {
           The story of how Ripe Harvest began...
         </h1>
         <div className="aboutSubContainer">
-          <p>
+          <p className="aboutParagraph">
             RipeHarvest began in young man’s Parent’s home in 2020, during the
             very infamous lockdown period, as a result of the COVID-19 pandemic.
             It has been a long- time dream of our founder Nick Glendining to

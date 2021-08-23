@@ -5,14 +5,27 @@
 }
 
 .aboutSubContainer{
-    width: 100%;
+    width: 98.8%;
     padding-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 20px;
     /* background-color: #548CA8; */
-    color: #555;
-    font-weight: 500;
+    /* color: #555; */
+    
+    /* font-weight: 600; */
+    background-color: black;
+    /* font-family: 'Kaisei Opti', serif; */
+    
+    /* opacity: 80%; */
+}
+
+.aboutParagraph{
+  padding: 0 10px;
+  color: white;
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .aboutMainHeading{
@@ -21,7 +34,8 @@
     /* background-color: #548CA8; */
     text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 5px;    
+    padding-top: 5px;
+    padding-bottom: 5px;    
 }
 
 .aboutOwnerImage{
@@ -31,7 +45,7 @@
     /* border-radius: 50%; */
     margin-top: 20px;
     padding-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: .6%;
 }
 
 .row {

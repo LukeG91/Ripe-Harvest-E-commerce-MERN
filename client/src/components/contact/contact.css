@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     
 }
 
@@ -26,6 +26,7 @@
 .contactMessageArea{
     width: 50%;
     margin-bottom: 40px;
+    background-color: black;
 }
 
 .contactNameInput, .contactEmailInput{
@@ -39,9 +40,10 @@
 }
 
 .contactSubmitButton:hover {
-    color: #fff;
+    color: #FFF7AE;
     background-color: black;
     transition: ease-in .7s;
+    border: 1px solid #FFF7AE;
 }
 
 .contactPageImage{
@@ -68,10 +70,8 @@
         
     }
     .contactPageHeading{
-        margin-top: 19px;
-    }
-
-    
+        margin-top: 17px;
+    }    
 }
 
 @media (max-width: 2500px){
@@ -82,6 +82,7 @@
         height: 85%;
     }
     .contactPageHeading{
-        margin-top: .1px;
+        margin-top: 4.5px;
     }
+    
 }

@@ -38,7 +38,7 @@ header ul li:hover{
 }
 
 .cart-icon span{
-    background: red;
+    background: rgb(84, 140, 168);
     border-radius: 20px;
     color: #fff;
     position: absolute;
