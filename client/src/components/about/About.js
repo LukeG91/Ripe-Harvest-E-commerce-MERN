@@ -45,7 +45,7 @@ function About() {
           <img src={ownerImage} alt="" className="aboutOwnerImage" />
         </div>
       </div>
-      <div className="row">
+      <div className="row bottomRow">
         <div className="column">
           <img src={firstImage} alt="" />
         </div>

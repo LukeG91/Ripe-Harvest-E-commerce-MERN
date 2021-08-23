@@ -1,6 +1,6 @@
 .login-page{
     max-width: 500px;
-    border: 2px solid rgb(3, 165, 206);
+    border: 2px solid rgb(84, 140, 168);
     border-radius: 5px;
     padding: 30px;
     margin: 50px auto;
@@ -18,8 +18,9 @@
     height: 40px;
     margin: 10px 0;
     padding: 0 5px;
-    outline: rgb(3, 165, 206);
+    /* outline: rgb(3, 165, 206); */
     border: 1px solid rgb(3, 165, 206);
+    border: 1px solid black;
 }
 
 .login-page form .row{
@@ -30,14 +31,27 @@
 
 .login-page form button{
     width: 150px;
-    background: rgb(3, 165, 206);
-    color: #fff;
+    background-color: #FFF7AE;
+    /* background: rgb(3, 165, 206); */
+    color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border: 1px solid black;
+}
+
+.login-page form button:hover{
+    width: 150px;
+    background-color: black;
+    /* background: rgb(3, 165, 206); */
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid red;
+    transition: ease-in 1s;
 }
 
 .login-page form a {
-    color: orangered;
+    color: black;
     letter-spacing: 1.2px;
     text-transform: uppercase;
 }
