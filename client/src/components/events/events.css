@@ -1,0 +1,14 @@
+.EventsPageHeading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: #548CA8;
+}
+
+.eventsFooterContainer{
+    position: absolute;
+    bottom: -10px;
+    left: 42%;
+}
+

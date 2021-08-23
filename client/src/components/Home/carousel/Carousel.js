@@ -12,7 +12,7 @@ import slider10 from "../../../images/fresh-fruit-with-madeira-cake.jpg";
 import slider11 from "../../../images/fruit-and-croisant.jpg";
 
 function HomeCarousel() {
-  const data = [
+  const carouselImages = [
     {
       image: slider1,
       caption: "Fresh fruit bowl",
@@ -74,7 +74,7 @@ function HomeCarousel() {
           }}
         >
           <Carousel
-            data={data}
+            data={carouselImages}
             time={4000}
             width="100%"
             height="600px"

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import BackgroundImage from "../../images/contactPageBackground.jpg";
+import BackgroundImage from "../../images/contactPageBackground2.jpg";
+import Footer from "../footer/Footer";
 
 function Contact() {
   /* Setting state. */
@@ -100,6 +101,9 @@ function Contact() {
             </div>
           </div>
         </form>
+      </div>
+      <div className="contactPageFooterContainer">
+        <Footer />
       </div>
     </div>
   );

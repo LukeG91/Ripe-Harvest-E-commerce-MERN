@@ -73,6 +73,9 @@ button {
 /* ---------------------------- Contact page --------------------------------- */
 @import url("../src/components/contact/contact.css");
 
+/* ---------------------------- Events page --------------------------------- */
+@import url("../src/components/events/events.css");
+
 /* ---------------------------- Making the website responsive ---------------------------- */
 @media(max-width: 820px){
   header .logo{
