@@ -5,6 +5,7 @@ import Close from "./icons/close.svg";
 import Cart from "./icons/cart.svg";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Logo from "../../images/CompanyLogo.png";
 
 function Header() {
   const state = useContext(GlobalState);
@@ -73,6 +74,13 @@ function Header() {
             {isAdmin ? "Admin" : "Ripe Harvest"}
           </Link>
         </h1>
+        <div className={isAdmin ? "adminLogoContainer" : "logoContainer"}>
+          <img
+            src={Logo}
+            alt=""
+            className={isAdmin ? "adminLogo" : "CompanyLogo"}
+          />
+        </div>
       </div>
       <ul style={styleMenu}>
         <li>

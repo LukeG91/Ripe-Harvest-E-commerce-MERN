@@ -48,4 +48,25 @@ header ul li:hover{
     font-size: 10px;
 }
 
+.CompanyLogo{
+    width: 50px;
+    object-fit: cover;
+}
 
+.logoContainer{
+    position: absolute;
+    top: 8px;
+    left: 330px;
+    
+}
+
+.adminLogoContainer{
+    position: absolute;
+    top: 17px;
+    left: 198px;
+}
+
+.adminLogo{
+    width: 30px;
+    object-fit: cover;
+}

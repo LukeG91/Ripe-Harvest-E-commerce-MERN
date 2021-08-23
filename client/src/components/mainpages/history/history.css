@@ -34,3 +34,22 @@ table a{
     object-fit: cover;
 }
 
+.orderHistoryTable{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.orderDetailsTable{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.productsTable{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.orderHistoryComponentMainHeadings{
+    color: rgb(84, 140, 168);
+    text-decoration: underline;
+}

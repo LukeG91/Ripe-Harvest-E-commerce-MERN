@@ -42,7 +42,11 @@ function About() {
             continuous growth and memorable relationships between our suppliers
             and customers that join with us on this incredibly exciting journey.{" "}
           </p>
-          <img src={ownerImage} alt="" className="aboutOwnerImage" />
+          <img
+            src={ownerImage}
+            alt="Image of the owner"
+            className="aboutOwnerImage"
+          />
         </div>
       </div>
       <div className="row bottomRow">

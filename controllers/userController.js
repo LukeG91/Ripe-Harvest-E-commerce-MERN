@@ -108,6 +108,25 @@ const userController = {
       return res.status(500).json({ msg: err.message });
     }
   },
+  getAllUsers: async (req, res) => {
+    try {
+      const allUsers = await Users.find();
+      res.json(allUsers);
+    } catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
+  },
+  deleteAUser: async (req, res) => {
+    try {
+      const findUser = await Users.findOne(req.params.id);
+      if (findUser) {
+        await Users.findByIdAndDelete(findUser);
+        res.json({ msg: "User deleted successfully." });
+      }
+    } catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
+  },
   addCart: async (req, res) => {
     try {
       const user = await Users.findById(req.user.id);

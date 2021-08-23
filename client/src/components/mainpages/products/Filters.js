@@ -32,11 +32,16 @@ function Filters() {
         value={search}
         placeholder="Enter your search criteria"
         onChange={(e) => setSearch(e.target.value.toLowerCase())}
+        className="searchInputFilter"
       />
 
       <div className="row sort">
         <span className="sortAndFilterHeadings">Sort By: </span>
-        <select value={sort} onChange={(e) => setSort(e.target.value)}>
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value)}
+          className="selectFilterComponent"
+        >
           <option value="">Newest</option>
           <option value="sort=oldest">Oldest</option>
           <option value="sort=-sold">Best sellers</option>

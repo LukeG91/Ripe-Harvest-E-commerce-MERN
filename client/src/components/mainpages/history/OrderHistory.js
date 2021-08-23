@@ -30,11 +30,19 @@ function OrderHistory() {
 
   return (
     <div className="history-page">
-      <h2>History</h2>
+      <h2 className="orderHistoryComponentMainHeadings">History</h2>
 
-      <h4>You have ordered {history.length} products</h4>
+      {isAdmin ? (
+        <h4 className="orderHistoryComponentMainHeadings">
+          You have {history.length} customer orders
+        </h4>
+      ) : (
+        <h4 className="orderHistoryComponentMainHeadings">
+          You have ordered {history.length} times with Ripe Harvest
+        </h4>
+      )}
 
-      <table>
+      <table className="orderHistoryTable">
         <thead>
           <tr>
             <th>Payment ID</th>

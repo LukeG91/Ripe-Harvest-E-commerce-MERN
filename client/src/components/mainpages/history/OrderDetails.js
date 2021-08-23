@@ -23,7 +23,7 @@ function OrderDetails() {
 
   return (
     <div className="history-page">
-      <table>
+      <table className="orderDetailsTable">
         <thead>
           <tr>
             <th>Name</th>
@@ -44,7 +44,7 @@ function OrderDetails() {
         </tbody>
       </table>
 
-      <table style={{ margin: "30px 0px" }}>
+      <table style={{ margin: "30px 0px" }} className="productsTable">
         <thead>
           <tr>
             <th></th>

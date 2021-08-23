@@ -77,6 +77,38 @@ button {
 @import url("../src/components/events/events.css");
 
 /* ---------------------------- Making the website responsive ---------------------------- */
+@media (max-width: 2500px){
+  .contactPageImage{
+      width: 60%;
+      left: 20%;
+      top: 8.5%;
+      height: 85%;
+  }
+  .contactPageHeading{
+      margin-top: 4.5px;
+  }
+
+  .logoContainer{
+    left: 570px;
+  }
+}
+
+@media (max-width: 1750px){
+  .contactPageImage{
+      width: 60%;
+      left: 20%;
+      margin-top: 10px;
+      
+  }
+  .contactPageHeading{
+      margin-top: 17px;
+  }
+  
+  .logoContainer{
+    left: 325px;
+  }
+}
+
 @media(max-width: 820px){
   header .logo{
     min-width: 115px;
@@ -162,5 +194,43 @@ button {
     position: relative;
     right: -10px;
     
+  }
+}
+
+@media(max-width: 375px){
+  .contactPageImage{
+    top: 65px;
+  }
+
+  .contactPageFooterContainer{
+    display: none;
+  }
+
+  .contactPageHeading{
+    font-size: .9rem;
+    width: 175px;
+  }
+
+  .logoContainer{
+    left: 280px;
+  }
+
+  .CompanyLogo{
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .eventsFooterContainer{
+    left: 17%;
+    bottom: 15px;
+  }
+  
+  .product_card{
+    margin-right: 55px;
+  }
+
+  .filter_menu .sort select{
+    width: 334.5px;
   }
 }
