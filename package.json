@@ -4,7 +4,7 @@
   "description": "",
   "main": "myServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node myServer.js",
     "server": "nodemon myServer.js",
@@ -13,7 +13,6 @@
     "client-install": "cd client && npm install",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
-
   },
   "repository": {
     "type": "git",
@@ -36,6 +35,8 @@
     "morgan": "1.10.0"
   },
   "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "9.1.0",
     "nodemon": "2.0.12"
   }
 }
