@@ -15,6 +15,7 @@ import OrderHistory from "../mainpages/history/OrderHistory";
 import OrderDetails from "../mainpages/history/OrderDetails";
 import Categories from "./categories/Categories";
 import CreateProduct from "./createProducts/CreateProduct";
+import Users from "../mainpages/users/Users";
 
 function Pages() {
   const state = useContext(GlobalState);
@@ -43,6 +44,7 @@ function Pages() {
         exact
         component={isAdmin ? CreateProduct : NotFound}
       />
+      <Route path="/users" exact component={isAdmin ? Users : NotFound} />
       <Route
         path="/edit_product/:id"
         exact

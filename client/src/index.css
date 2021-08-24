@@ -76,6 +76,9 @@ button {
 /* ---------------------------- Events page --------------------------------- */
 @import url("../src/components/events/events.css");
 
+/* ---------------------------- Users page --------------------------------- */
+@import url("../src/components/mainpages/users/users.css");
+
 /* ---------------------------- Making the website responsive ---------------------------- */
 @media (max-width: 2500px){
   .contactPageImage{

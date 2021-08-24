@@ -1,0 +1,52 @@
+.showAllUsersContainer{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.showAllUsersContainer .row {
+    min-width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.usersPageButtonContainer button {
+    padding: 5px;
+    width: 50px;
+}
+
+.userInfoEditButton{
+    margin-right: 10px;
+}
+
+.row p {
+    font-size: .9rem;
+}
+
+.userInformationContainer{
+    width: 80%;
+}
+
+.userRoleInfo{
+    position: absolute;
+    right: 580px;
+}
+
+.userEmailInfo{
+    position: absolute;
+    left: 550px;
+}
+
+.userPageMainHeading{
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(84, 140, 168);;
+}

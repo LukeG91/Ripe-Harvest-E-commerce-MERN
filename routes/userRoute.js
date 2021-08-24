@@ -9,7 +9,7 @@ router.get("/refresh_token", userController.refreshToken);
 router.get("/infor", auth, userController.getUser);
 router.patch("/addcart", auth, userController.addCart);
 router.get("/history", auth, userController.history);
-router.get("/allUsers", auth, userController.getAllUsers);
+router.get("/allUsers", userController.getAllUsers);
 router.delete("/deleteUser", auth, userController.deleteAUser);
 
 module.exports = router;

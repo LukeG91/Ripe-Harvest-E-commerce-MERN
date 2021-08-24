@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { GlobalState } from "../../../GlobalState";
 import axios from "axios";
 
@@ -61,10 +61,14 @@ function Categories() {
     }
   };
 
+  // useEffect(() => {
+  //   console.log(categories);
+  // });
+
   return (
     <div className="categories">
       <form onSubmit={createCategory}>
-        <label htmlFor="category">category</label>
+        <label htmlFor="category">Category</label>
         <input
           type="text"
           name="category"

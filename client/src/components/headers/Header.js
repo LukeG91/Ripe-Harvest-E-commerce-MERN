@@ -30,6 +30,9 @@ function Header() {
         <li>
           <Link to="/category">Categories</Link>{" "}
         </li>
+        <li>
+          <Link to="/users">Users</Link>
+        </li>
       </>
     );
   };
@@ -40,9 +43,9 @@ function Header() {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/about">About</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/history">Order History</Link>
         </li>

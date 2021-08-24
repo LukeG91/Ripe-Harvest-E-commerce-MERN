@@ -3,6 +3,7 @@ import ProductsAPI from "./api/ProductsAPI";
 import axios from "axios";
 import UserAPI from "./api/UserAPI";
 import CategoriesAPI from "./api/CategoriesAPI";
+import GetUsersAPI from "../src/api/GetUsersAPI";
 
 export const GlobalState = createContext();
 
@@ -30,6 +31,7 @@ export const DataProvider = ({ children }) => {
     productsAPI: ProductsAPI(),
     userAPI: UserAPI(token),
     categoriesAPI: CategoriesAPI(),
+    getUsersApi: GetUsersAPI(),
   };
 
   // ProductsAPI();
