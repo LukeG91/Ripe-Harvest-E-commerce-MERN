@@ -231,8 +231,8 @@ This website will be used mostly by people who like to buy health products onlin
 
 #### **References**
 
-[MERN Stack | Build a Ecommerce Website - Full](https://www.youtube.com/watch?v=uXl77UFkrkQ)
+- [MERN Stack | Build a Ecommerce Website - Full](https://www.youtube.com/watch?v=uXl77UFkrkQ)
 
-[Easy to use, responsive and customizable carousel component for React](https://reactjsexample.com/easy-to-use-responsive-and-customizable-carousel-component-for-react/)
+- [Easy to use, responsive and customizable carousel component for React](https://reactjsexample.com/easy-to-use-responsive-and-customizable-carousel-component-for-react/)
 
-[React State Management Tutorial | Context Api | React Tutorial For Beginners](https://www.youtube.com/watch?v=35lXWvCuM8o&t=1012s)
+- [React State Management Tutorial | Context Api | React Tutorial For Beginners](https://www.youtube.com/watch?v=35lXWvCuM8o&t=1012s)
