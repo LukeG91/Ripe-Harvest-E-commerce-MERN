@@ -82,7 +82,7 @@ To run tests for the back-end of the application, do the following:
 - cd into main project folder(Ripe-Harvest-E-Commerce)
 - run 'npm test'
 
-`The screenshots below display the different pages on the website and how to interact with the web page.`
+#### The screenshots below display the different pages on the website and how to interact with the web page:
 
 <a name="screenshots"></a>
 
