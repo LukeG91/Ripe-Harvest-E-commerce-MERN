@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`I am running a snapshot test in order to ensure that the Home page component renders correctly. 1`] = `
+<div
+  className="mainHomeContainer"
+>
+  <div
+    className="subHomeContainer"
+  >
+    <h1
+      className="homePageMainHeading"
+    >
+      Welcome to Ripe Harvest
+    </h1>
+    <h4
+      className="homePageSlogan"
+    >
+      Providing real health by supplying whole foods that are packed with goodness and nutrients
+    </h4>
+  </div>
+  <div
+    className="homeImageContainer"
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="box"
+            style={
+              Object {
+                "marginBottom": "20px",
+                "marginTop": "20px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "maxHeight": "600px",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <div
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="carousel-container"
+                  style={
+                    Object {
+                      "backgroundColor": "darkgrey",
+                      "borderRadius": "10px",
+                      "height": "600px",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Fresh fruit bowl"
+                      className="carousel-image"
+                      src="fresh-fruit-bowl-slider.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Fresh fruit bowl
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Oats health bowl"
+                      className="carousel-image"
+                      src="fruit-and-muesli.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Oats health bowl
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Fresh fruit"
+                      className="carousel-image"
+                      src="fresh-fruit-on-bread-slider.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Fresh fruit
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Berry smoothies"
+                      className="carousel-image"
+                      src="berry-smoothies-slider.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Berry smoothies
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Honey & fruit"
+                      className="carousel-image"
+                      src="apples-and-honey.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Honey & fruit
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Honey & waffles"
+                      className="carousel-image"
+                      src="honey-and-mini-waffles.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Honey & waffles
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Freshly harvested honey comb"
+                      className="carousel-image"
+                      src="honey-comb-slider.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Freshly harvested honey comb
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Pancakes with honey & berries"
+                      className="carousel-image"
+                      src="pancakes-with-gooseberries.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Pancakes with honey & berries
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Queen bee in nature"
+                      className="carousel-image"
+                      src="queen-bee-slider.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Queen bee in nature
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Fresh fruit with madeira cake"
+                      className="carousel-image"
+                      src="fresh-fruit-with-madeira-cake.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Fresh fruit with madeira cake
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Fresh fruit with a croisant"
+                      className="carousel-image"
+                      src="fruit-and-croisant.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "2em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Fresh fruit with a croisant
+                    </div>
+                  </div>
+                  <a
+                    className="prev"
+                    onClick={[Function]}
+                  >
+                    ❮
+                  </a>
+                  <a
+                    className="next"
+                    onClick={[Function]}
+                  >
+                    ❯
+                  </a>
+                  <div
+                    className="dots"
+                  >
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="footerParentDiv"
+    >
+      <div
+        className="footerMainDiv"
+      >
+        <p>
+          Ripe Harvest || Copyright 2021
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

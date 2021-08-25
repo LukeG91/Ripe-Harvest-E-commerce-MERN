@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`I am running a snapshot test in order to ensure that the Events page component renders correctly. 1`] = `
+<div>
+  <h1
+    className="EventsPageHeading"
+  >
+    Upcoming Events:
+  </h1>
+  <div
+    className="eventsCarousel"
+  >
+    <div>
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="box"
+            style={
+              Object {
+                "marginBottom": "20px",
+                "marginTop": "20px",
+                "textAlign": "center",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "maxHeight": "600px",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <div
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="carousel-container"
+                  style={
+                    Object {
+                      "backgroundColor": "darkgrey",
+                      "borderRadius": "10px",
+                      "height": "600px",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Oranjezicht night market Saturday the 28th of August: 6pm - 10pm"
+                      className="carousel-image"
+                      src="slider1.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "1.5em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Oranjezicht night market Saturday the 28th of August: 6pm - 10pm
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="V&A Waterfront fresh produce market Saturday the 4th of September: 10am - 6pm"
+                      className="carousel-image"
+                      src="slider6.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "1.5em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      V&A Waterfront fresh produce market Saturday the 4th of September: 10am - 6pm
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item fade"
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "maxHeight": "600px",
+                        "maxWidth": "100%",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Old biscuit mill Saturday the 11th of September: 10am - 10pm"
+                      className="carousel-image"
+                      src="slider5.jpg"
+                      style={
+                        Object {
+                          "borderRadius": "10px",
+                          "objectFit": "cover",
+                        }
+                      }
+                    />
+                    <div
+                      className="carousel-caption-bottom"
+                      style={
+                        Object {
+                          "fontSize": "1.5em",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Old biscuit mill Saturday the 11th of September: 10am - 10pm
+                    </div>
+                  </div>
+                  <a
+                    className="prev"
+                    onClick={[Function]}
+                  >
+                    ❮
+                  </a>
+                  <a
+                    className="next"
+                    onClick={[Function]}
+                  >
+                    ❯
+                  </a>
+                  <div
+                    className="dots"
+                  >
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                    <span
+                      className="dot"
+                      onClick={[Function]}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="eventsFooterContainer"
+  >
+    <div
+      className="footerParentDiv"
+    >
+      <div
+        className="footerMainDiv"
+      >
+        <p>
+          Ripe Harvest || Copyright 2021
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
