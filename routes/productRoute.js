@@ -20,3 +20,13 @@ router
 
 /* I am exporting the router module so that it can be used in my application */
 module.exports = router;
+
+/* Resource used: 
+   ============== 
+   YouTube video: 
+   Video title: MERN Stack | Build a Ecommerce Website - Full
+   Date published: October 11, 2020
+   Published by: Dev A.T Viet Nam
+   Link to video: https://www.youtube.com/watch?v=uXl77UFkrkQ
+   ===========================================================
+*/

@@ -71,3 +71,13 @@ export default class PaypalButton extends React.Component {
    Link to article: https://www.npmjs.com/package/react-paypal-express-checkout
    ============================================================================
 */
+
+/* Another resource used as a guide: 
+   ================================= 
+   YouTube video: 
+   Video title: MERN Stack | Build a Ecommerce Website - Full
+   Date published: October 11, 2020
+   Published by: Dev A.T Viet Nam
+   Link to video: https://www.youtube.com/watch?v=uXl77UFkrkQ
+   ===========================================================
+*/

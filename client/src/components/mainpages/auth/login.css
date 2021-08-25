@@ -18,7 +18,6 @@
     height: 40px;
     margin: 10px 0;
     padding: 0 5px;
-    /* outline: rgb(3, 165, 206); */
     border: 1px solid rgb(3, 165, 206);
     border: 1px solid black;
 }
@@ -32,7 +31,6 @@
 .login-page form button{
     width: 150px;
     background-color: #FFF7AE;
-    /* background: rgb(3, 165, 206); */
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -42,7 +40,6 @@
 .login-page form button:hover{
     width: 150px;
     background-color: black;
-    /* background: rgb(3, 165, 206); */
     color: red;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -56,3 +53,12 @@
     text-transform: uppercase;
 }
 
+/* Resource used: 
+   ============== 
+   YouTube video: 
+   Video title: MERN Stack | Build a Ecommerce Website - Full
+   Date published: October 11, 2020
+   Published by: Dev A.T Viet Nam
+   Link to video: https://www.youtube.com/watch?v=uXl77UFkrkQ
+   ===========================================================
+*/
