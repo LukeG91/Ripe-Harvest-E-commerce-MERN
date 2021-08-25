@@ -41,8 +41,22 @@ creamed honey and more. The previous website that the owner had, didn't have all
 
 # Usage
 
-1. To install the necessary dependancies for the backend of the application, in the main project directory run: npm i
-2. To install the necessary dependancies for the front-end of the application cd into the 'client' directory and run: npm i
+1. To install the necessary dependancies for the backend of the application, in the main project directory run:
+
+```
+  npm install
+```
+
+```
+  npm install chai chai-http mocha nodemon --save-dev
+```
+
+2. To install the necessary dependancies for the front-end of the application cd into the 'client' directory and run:
+
+```
+  npm install
+```
+
 3. From the main project directory run the following to start the application: npm run start-app
 4. The above command will start up both the front end as well as the backend of the application
 5. To test the site out as an end user, register using the registration page and then login to the website.

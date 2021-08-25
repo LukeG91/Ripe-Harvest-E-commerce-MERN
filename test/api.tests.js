@@ -58,7 +58,7 @@ describe("I am testing the User API end points", () => {
     });
   });
 
-  /* Testing the /user/register endpoint to ensure a 200 status code is returned when a user registers on the website. */
+  /* Testing the /user/register endpoint to ensure a 400 status code is returned when a user enters a password that is too short */
   describe("Peforming a test on the /user/register end point.", () => {
     /* Expecting a 400 status code to be returned. */
     it("Testing to ensure a 400 response code", (done) => {
