@@ -1,3 +1,5 @@
+/* This file contains all of the page routing for React App */
+/* I am importing the libraries and odules that I need as well as the components so that I can create routes for them */
 import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
 import Products from "./products/Products";
@@ -18,12 +20,16 @@ import CreateProduct from "./createProducts/CreateProduct";
 import Users from "../mainpages/users/Users";
 
 function Pages() {
+  /* Setting state and I am pulling in the GlobalState variables so that I can make use of the 'isLogged' and 'isAdmin' state variables */
   const state = useContext(GlobalState);
   const [isLogged] = state.userAPI.isLogged;
   const [isAdmin] = state.userAPI.isAdmin;
 
   return (
+    /* Using the Switch hook to hold the different routes for my application */
     <Switch>
+      {/* Declaring all of the routes that I am going to need and I am using the state variables that I have declared as
+          conditions to perform a certain action where needed. */}
       <Route path="/" exact component={Home} />
       <Route path="/shop" exact component={Products} />
       <Route path="/detail/:id" exact component={ProductDetail} />

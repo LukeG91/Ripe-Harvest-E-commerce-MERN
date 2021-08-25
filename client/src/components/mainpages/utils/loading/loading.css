@@ -1,3 +1,6 @@
+/* I am adding styles to the Loading component so that the Loading component spins in a wheel like motion
+   while the application is pulling data that the user requested */
+
 .load-page{
     background-color: #fff;
     overflow: hidden;

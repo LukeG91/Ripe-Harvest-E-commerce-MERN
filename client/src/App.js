@@ -1,3 +1,4 @@
+/* Importing the libraries, modules and files that I need */
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { DataProvider } from "./GlobalState";
@@ -6,6 +7,7 @@ import MainPages from "./components/mainpages/Pages";
 
 function App() {
   return (
+    /* Using the DataProvider to make the global state variables available in the different pages/components of the website. */
     <DataProvider>
       <Router>
         <div className="App">

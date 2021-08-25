@@ -1,9 +1,13 @@
+/* Importing the modules and component that I need */
 import React from "react";
 import { Link } from "react-router-dom";
 import BtnRender from "../productItem/BtnRender";
 
+/* Creating a function to display the individual product items, I am pulling in props that I am going to be using in this component */
 function ProductItem({ product, isAdmin, deleteProduct, handleCheck }) {
   return (
+    /* Creating the JSX structure for this component and I am using the props that I have passed to this component to display the 
+       relevant information that I need to show */
     <div className="product_card">
       {isAdmin && (
         <input
@@ -25,6 +29,7 @@ function ProductItem({ product, isAdmin, deleteProduct, handleCheck }) {
         <p className="productItemComponentDescription">{product.description}</p>
       </div>
 
+      {/* Rendering the BtnRender component */}
       <BtnRender product={product} deleteProduct={deleteProduct} />
     </div>
   );

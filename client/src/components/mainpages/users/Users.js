@@ -1,3 +1,4 @@
+/* Importing the libraries/modules that I need and I am importing GlobalState so that I can use it in this component */
 import React, { useState, useContext, useEffect } from "react";
 import { GlobalState } from "../../../GlobalState";
 import axios from "axios";
@@ -7,6 +8,7 @@ import axios from "axios";
    display on the web page, I just need to complete the functionality. */
 
 function Users() {
+  /* Setting state and I am pulling in variables from GlobalState */
   const state = useContext(GlobalState);
   const [users] = state.getUsersApi.users;
   const [editUser, setEditUser] = useState(false);
@@ -28,6 +30,7 @@ function Users() {
 
   return (
     <>
+      {/* Creating the JSX structure to display the users that are registered on the system onthe we page */}
       <h1 className="userPageMainHeading">All users:</h1>
       <h3 className="informUser">
         The 'Edit' and 'Delete' buttons are still in development and are not yet
@@ -47,6 +50,7 @@ function Users() {
         <button type="submit">Update</button>
       </form> */}
 
+        {/* Using the map() method to map through the users array and display each user that is stored in the array on the web page */}
         <div className="userInformationContainer">
           {users.map((user) => (
             <div className="row" key={user._id}>
@@ -65,6 +69,7 @@ function Users() {
   );
 }
 
+/* Exporting the users components so that I can use it in my application */
 export default Users;
 
 /* Resource used: 
