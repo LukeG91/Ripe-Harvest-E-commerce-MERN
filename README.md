@@ -7,7 +7,7 @@
 ## Project description
 
 This website is for a business owner that sells health products including raw honey, fresh berries, honey based butters,
-creamed honey and more. The previous website that the owner had, didn't have all of the features that he wanted. The new website that I built has all of the features that the owner would like his business website to have which includes the ability to make purchase products online. This website is not yet live and is still in development and in turn I have shared the login details below so that users can test the website's functionality as well as check out the Admin features/functions.
+creamed honey and more. The previous website that the owner had, didn't have all of the features that he wanted. The new website that I built has all of the features that the owner would like his business website to have which includes the ability to purchase products online. This website is not yet live and is still in development and in turn I have shared the login details below so that users can test the website's functionality as well as check out the Admin features/functions.
 
 <a name="contents"></a>
 
