@@ -59,6 +59,13 @@ creamed honey and more. The previous website that the owner had, didn't have all
   Password: 123456
 ```
 
+<a name="deployment"></a>
+
+## Deployment
+
+I have used the Heroku platform to deploy my application to, both the front end as well as the backend of the application are
+running on Heroku. To see the deployed website, please browse to:
+
 <a name="apis"></a>
 
 ## API's and API keys
@@ -82,7 +89,7 @@ To run tests for the back-end of the application, do the following:
 - cd into main project folder(Ripe-Harvest-E-Commerce)
 - run 'npm test'
 
-#### The screenshots below display the different pages on the website and how to interact with the website:
+#### The screenshots below display some of the pages that make up the website and also show how to interact with the website:
 
 <a name="screenshots"></a>
 
