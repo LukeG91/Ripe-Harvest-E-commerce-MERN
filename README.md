@@ -228,3 +228,11 @@ This website will be used mostly by people who like to buy health products onlin
 #### **Note**
 
 - As mentioned above, this is a real world project for a real business, this has given me a great deal of experience so far as I have met with the business owner to understand exactly what they need their new website to be able to do in order to take their business to the next level. The meetings I have had with the business owner have been insightful and I have learnt alot from interacting with a real customer and learning how to present possible routes to follow as well as how to make design and system recommendations that will benefit the customer. I am just adding this note for context and I am really happy to be building a website that will be used to service many cusotmers from the Ripe Harvest business. In conclusion, this project has allowed me to really dive deep into doing research and I feel it will really help me take my full stack development skills to the next level as I am now building a website that is going to be used in the real world.
+
+#### **References**
+
+[MERN Stack | Build a Ecommerce Website - Full](https://www.youtube.com/watch?v=uXl77UFkrkQ)
+
+[Easy to use, responsive and customizable carousel component for React](https://reactjsexample.com/easy-to-use-responsive-and-customizable-carousel-component-for-react/)
+
+[React State Management Tutorial | Context Api | React Tutorial For Beginners](https://www.youtube.com/watch?v=35lXWvCuM8o&t=1012s)

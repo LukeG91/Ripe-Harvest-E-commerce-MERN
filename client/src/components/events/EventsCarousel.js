@@ -72,3 +72,13 @@ function EventsCarousel() {
 }
 
 export default EventsCarousel;
+
+/* Resources used:
+   ===============
+   Article:
+   Title of article: Easy to use, responsive and customizable carousel component for React
+   Published by: Cant find author name but this shows at the bottom of the article "Powered by React.js Examples"
+   Date published: August 12 2021
+   Link to article: https://reactjsexample.com/easy-to-use-responsive-and-customizable-carousel-component-for-react/
+   =================================================================================================================
+   */
