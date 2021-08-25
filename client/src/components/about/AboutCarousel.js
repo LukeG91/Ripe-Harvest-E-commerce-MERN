@@ -10,7 +10,7 @@ function AboutCarousel() {
     {
       image: slider1,
       caption:
-        "The products are amazing, they always have stock and the food tastes amazing!",
+        "The products are amazing, they always have stock and the food tastes great!",
     },
     {
       image: slider2,

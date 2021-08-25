@@ -65,11 +65,15 @@ if (process.env.NODE_ENV === "production") {
    my website to Heroku in case another site is using PORT 8080, then my app will run on another
    available port. */
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(
-    `The server is listening on port ${PORT} \nBrowse to http://localhost:8080 to see the server `
-  );
-});
+// app.listen(PORT, () => {
+//   console.log(
+//     `The server is listening on port ${PORT} \nBrowse to http://localhost:8080 to see the server `
+//   );
+// });
+
+module.exports = app.listen(PORT, () =>
+  console.log(`The server is listening on port ${PORT}`)
+);
 
 /* Resource used: 
    ============== 
