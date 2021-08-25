@@ -51,6 +51,7 @@ function About() {
         </div>
       </div>
       <div>
+        <h2 className="customerTestimonialsHeading">Customer Testimonials:</h2>
         <AboutCarousel />
       </div>
       <div className="row bottomRow">
