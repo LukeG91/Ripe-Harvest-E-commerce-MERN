@@ -52,7 +52,7 @@ creamed honey and more. The previous website that the owner had, didn't have all
   Password: [a<-)8F3
 ```
 
-7. If you would like to tst out the website as an Admin user, please use the details below:
+7. If you would like to test out the website as an Admin user, please use the details below:
 
 ```
   Email: admin@gmail.com
@@ -65,6 +65,8 @@ creamed honey and more. The previous website that the owner had, didn't have all
 
 I have used the Heroku platform to deploy my application to, both the front end as well as the backend of the application are
 running on Heroku. To see the deployed website, please browse to:
+
+https://ripe-harvest.herokuapp.com/
 
 <a name="apis"></a>
 

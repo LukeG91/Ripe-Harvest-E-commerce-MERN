@@ -1,10 +1,11 @@
 import React from "react";
-import ownerImage from "../about/images/Nick.jpg";
+import ownerImage from "../about/images/ripe-harvest-owner.jpeg";
 import Footer from "../footer/Footer";
 import firstImage from "../about/images/sunrise.jpg";
 import secondImage from "../about/images/walking.jpg";
 import thirdImage from "../about/images/fruit.jpg";
 import fourthImage from "../about/images/berries.jpg";
+import AboutCarousel from "./AboutCarousel";
 
 function About() {
   return (
@@ -48,6 +49,9 @@ function About() {
             className="aboutOwnerImage"
           />
         </div>
+      </div>
+      <div>
+        <AboutCarousel />
       </div>
       <div className="row bottomRow">
         <div className="column">
