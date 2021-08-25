@@ -21,6 +21,10 @@
 .usersPageButtonContainer button {
     padding: 5px;
     width: 50px;
+    border-radius: 5px;
+    background-color: rgb(84, 140, 168);
+    color: black;
+    font-weight: bold;
 }
 
 .userInfoEditButton{
@@ -49,4 +53,10 @@
     text-decoration: underline;
     text-align: center;
     color: rgb(84, 140, 168);;
+}
+
+.informUser{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
 }

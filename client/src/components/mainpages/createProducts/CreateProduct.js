@@ -131,8 +131,6 @@ function CreateProduct() {
         );
       }
       setCallback(!callback);
-      // setImages(false);
-      // setProduct(initialState);
       history.push("/");
     } catch (error) {
       alert(error.response.data.msg);
