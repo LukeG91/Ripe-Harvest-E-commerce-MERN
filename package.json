@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start-app": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node myServer.js",
     "server": "nodemon myServer.js",
     "client": "cd client && npm run start",
