@@ -2,11 +2,8 @@
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import slider1 from "../events/images/slider1.jpg";
-import slider2 from "../events/images/slider2.jpg";
-import slider3 from "../events/images/slider3.jpg";
-import slider4 from "../events/images/slider4.jpg";
-import slider5 from "../events/images/slider5.jpg";
-import slider6 from "../events/images/slider6.jpg";
+import slider2 from "../events/images/slider5.jpg";
+import slider3 from "../events/images/slider6.jpg";
 
 function EventsCarousel() {
   /* Creating an array that stores the images that will be used in the carousel and I am string the
@@ -18,12 +15,12 @@ function EventsCarousel() {
         "Oranjezicht night market Saturday the 28th of August: 6pm - 10pm",
     },
     {
-      image: slider6,
+      image: slider2,
       caption:
         "V&A Waterfront fresh produce market Saturday the 4th of September: 10am - 6pm",
     },
     {
-      image: slider5,
+      image: slider3,
       caption: "Old biscuit mill Saturday the 11th of September: 10am - 10pm",
     },
   ];

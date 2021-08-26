@@ -70,6 +70,31 @@ module.exports = app.listen(PORT, () =>
   console.log(`The server is listening on port ${PORT}`)
 );
 
+/* Notes and take away points from this task:
+   ==========================================
+     
+   1. This task was very exciting and also a very big challenge,
+      I was motivated and very determined to deliver the highest 
+     quality of work and to push through bugs that had me stuck 
+     for hours because this website is for a real customer.
+   2. I gained so much knowldge by doing this build, I now know how 
+      to make use of the Cloudinary media storage cloud service and 
+      how to use PayPal as a payment gateway in my applications.
+   3. My understanding of how everything ties together in a full stack MERN 
+      application really came together in this task, it took me very long to build 
+      and there are still a few more tweaks as well as a few more features that I will 
+      be adding overtime, overall this project really made me feel like I have a deep 
+      and good unuderstanding of code and has given me great confidence to go forward 
+      into my Web Development career.
+    4. This task was fairly daunting in the beginnning, but now that I have built the application
+       and I understand how the front end and back end interact with each other and how the database ties in, 
+       my confidencein my developing ability has really gone to the next level and I am excited to build
+       on this and to land a Junior developer role soon after graduating so I can learn and grow more as
+       well as gain more confidence.
+    5.  All in all I thoroughly enjoyed this build and it gave me such a good grounding and base to build on
+        as I would like to specialize in full stack e-commerce MERN development as I have a real passion for e-commerce/online shopping.
+*/
+
 /* Resource used: 
    ============== 
    YouTube video: 

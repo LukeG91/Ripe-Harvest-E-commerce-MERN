@@ -2,9 +2,8 @@
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import slider1 from "./testimonial-Images/Testimonial-1.jpg";
-import slider2 from "./testimonial-Images/Testimonial-2.jpg";
-import slider3 from "./testimonial-Images/Testimonial-3.jpg";
-import slider4 from "./testimonial-Images/Testimonial-4.jpg";
+import slider2 from "./testimonial-Images/pexels-jorge-fakhouri-filho-2701660.jpg";
+import slider3 from "./testimonial-Images/pexels-wendy-wei-1699159.jpg";
 
 function AboutCarousel() {
   /* Creating an array that stores the images that will be used in the carousel and I am string the
@@ -21,7 +20,7 @@ function AboutCarousel() {
         "I am so happy with the service received from Ripe Harvest, they are friendly and very helpful!",
     },
     {
-      image: slider4,
+      image: slider3,
       caption:
         "I love this business, I reccomend it to all my friends and family, and I love the website, it works well and it is very well layed out, I am a huge fan of Ripe Harvest!",
     },

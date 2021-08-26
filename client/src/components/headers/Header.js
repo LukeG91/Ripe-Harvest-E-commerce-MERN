@@ -17,7 +17,7 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
   /* Creating a function that will handle the user logout process */
-  const logoutUser = async () => {
+  const userLogoutProcess = async () => {
     /* Making a GET request to my API */
     await axios.get("/user/logout");
     /* Using the 'firstLogin' key to remove the value from local storage */
@@ -27,7 +27,7 @@ function Header() {
   };
 
   /* Creating a function to return certain header options if the user is logged in as an Admin user  */
-  const adminUserOptions = () => {
+  const headerOptionsForAdminUsers = () => {
     return (
       <>
         <li>
@@ -44,7 +44,7 @@ function Header() {
   };
 
   /* Creating a function that will return header options when a user is logged into the website */
-  const normalLoginOptions = () => {
+  const headerOptionsForNonAdminUsers = () => {
     return (
       <>
         <li>
@@ -60,7 +60,7 @@ function Header() {
           <Link to="/events">Upcoming events</Link>
         </li>
         <li>
-          <Link to="/" onClick={logoutUser}>
+          <Link to="/" onClick={userLogoutProcess}>
             Logout
           </Link>
         </li>
@@ -69,7 +69,7 @@ function Header() {
   };
 
   /* Creating a variable that stores style information */
-  const styleMenu = {
+  const styleInformation = {
     left: menu ? 0 : "-100%",
   };
 
@@ -96,15 +96,15 @@ function Header() {
           />
         </div>
       </div>
-      <ul style={styleMenu}>
+      <ul style={styleInformation}>
         <li>
           <Link to="/shop">{isAdmin ? "Products" : "Shop"}</Link>
         </li>
-        {/* Displaying the adminUserOptions() header options if the user is logged in as an Admin user */}
-        {isAdmin && adminUserOptions()}
-        {/* If a normal user has logged in then the header options in the normalLoginOptions() will be returned */}
+        {/* Displaying the headerOptionsForAdminUsers() header options if the user is logged in as an Admin user */}
+        {isAdmin && headerOptionsForAdminUsers()}
+        {/* If a normal user has logged in then the header options in the headerOptionsForNonAdminUsers() will be returned */}
         {isLogged ? (
-          normalLoginOptions()
+          headerOptionsForNonAdminUsers()
         ) : (
           /* If a user is not logged in and is simply browsing the wbsite, then the header options below will be
              displayed */

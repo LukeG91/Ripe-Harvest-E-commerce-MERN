@@ -11,7 +11,7 @@ function Login() {
   });
 
   /* Creating a function to handle the input change for the email and password fields */
-  const onChangeInput = (e) => {
+  const userInputHandler = (e) => {
     /* I am using the name that is assigned to each input and I am using the value that the user enters
        for each specific input as the value for that specifc name which is either 'email' or 'password' */
     const { name, value } = e.target;
@@ -20,7 +20,7 @@ function Login() {
   };
 
   /* Creating a function to process the login once the user has entered their login details and clicks the login button */
-  const loginSubmit = async (e) => {
+  const userLoginHandler = async (e) => {
     e.preventDefault();
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
@@ -39,7 +39,7 @@ function Login() {
   /* Creating the structure for the Login web page */
   return (
     <div className="login-page">
-      <form onSubmit={loginSubmit}>
+      <form onSubmit={userLoginHandler}>
         <h2>Login</h2>
         <input
           type="email"
@@ -47,7 +47,7 @@ function Login() {
           required
           placeholder="Enter your email"
           value={user.email}
-          onChange={onChangeInput}
+          onChange={userInputHandler}
         />
 
         <input
@@ -57,7 +57,7 @@ function Login() {
           autoComplete="on"
           placeholder="Enter your password"
           value={user.password}
-          onChange={onChangeInput}
+          onChange={userInputHandler}
         />
 
         {/* Creating a container that contains the Login and Register buttons, and the display will change

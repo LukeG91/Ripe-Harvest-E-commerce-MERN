@@ -34,7 +34,7 @@ function Cart() {
   }, [cart]);
 
   /* Creating a function to make an API call to update the shopping cart information */
-  const addToCart = async (cart) => {
+  const addingNewProductToCart = async (cart) => {
     /* Making a PATCH request which is used to provide instructions on the process required in order
        to change/update a specific piece of information */
     await axios.patch(
@@ -50,7 +50,7 @@ function Cart() {
   };
 
   /* Creating a function that will allow a user to increase the quantity of a specific product that is in their cart */
-  const increment = (id) => {
+  const increaseProductQuantity = (id) => {
     /* Using a forEach loop on the cart array and I am saying that if the item._id value matches the 'id' value that gets parsed 
        into the function, then the product quantity will be increased by 1 each time the user clicks on the increment button */
     cart.forEach((item) => {
@@ -60,11 +60,11 @@ function Cart() {
     });
     /* Updating state */
     setCart([...cart]);
-    addToCart(cart);
+    addingNewProductToCart(cart);
   };
 
   /* Creating a function that will allow a user to decrease the quantity of a specific product that is in their cart */
-  const decrement = (id) => {
+  const decreaseProductQuantity = (id) => {
     /* Using a forEach loop on the cart array and I am saying that if the item._id value matches the 'id' value that gets parsed 
        into the function, then the product quantity will be decreased by 1 each time the user clicks on the decrement button 
        and if the product quantity is 1 then the user will not be able to decrement the quantity any more, if they don't want the 
@@ -77,12 +77,12 @@ function Cart() {
     });
     /* Updating state */
     setCart([...cart]);
-    addToCart(cart);
+    addingNewProductToCart(cart);
   };
 
   /* Creating a function that will be called when a user clicks on the x in the top right corner
      of the product image */
-  const removeProduct = (id) => {
+  const deleteProductFromCart = (id) => {
     /* Using popup window that will display a message asking the user if they are
        certain that they want to remove the product from their cart. */
     if (
@@ -100,12 +100,12 @@ function Cart() {
       });
       /* Updating state */
       setCart([...cart]);
-      addToCart(cart);
+      addingNewProductToCart(cart);
     }
   };
 
   /* Creating a function to process the customer payment */
-  const tranSuccess = async (payment) => {
+  const usrPaymentSuccess = async (payment) => {
     /* Deconstructing the object and I am extracting information that I need from 'payment' which is parsed in as
        an argument to this function */
     const { paymentID, address } = payment;
@@ -125,7 +125,7 @@ function Cart() {
 
     /* Updating state */
     setCart([]);
-    addToCart([]);
+    addingNewProductToCart([]);
 
     /* An alert advising the user that they have successfully placed an order */
     alert("You have successfully placed your order.");
@@ -176,21 +176,31 @@ function Cart() {
             <p>{product.content}</p>
 
             <div className="amount">
-              <button onClick={() => decrement(product._id)}> - </button>
+              <button onClick={() => decreaseProductQuantity(product._id)}>
+                {" "}
+                -{" "}
+              </button>
               <span>{product.quantity}</span>
-              <button onClick={() => increment(product._id)}> + </button>
+              <button onClick={() => increaseProductQuantity(product._id)}>
+                {" "}
+                +{" "}
+              </button>
             </div>
 
-            <div className="delete" onClick={() => removeProduct(product._id)}>
+            <div
+              className="delete"
+              onClick={() => deleteProductFromCart(product._id)}
+            >
               X
             </div>
           </div>
         </div>
       ))}
 
+      {/* Creating a container to display the total cost of the users cart and I am bringing in the PaypalButton component */}
       <div className="total">
         <h3>Total: R {total}</h3>
-        <PaypalButton total={total} tranSuccess={tranSuccess} />
+        <PaypalButton total={total} usrPaymentSuccess={usrPaymentSuccess} />
       </div>
     </div>
   );

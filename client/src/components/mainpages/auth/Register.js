@@ -12,14 +12,14 @@ function Register() {
   });
 
   /* Creating a function to handle the input change for the name, email and password fields */
-  const onChangeInput = (e) => {
+  const userInputChange = (e) => {
     const { name, value } = e.target;
     /* Updating state */
     setUser({ ...user, [name]: value });
   };
 
   /* Creating a function to process the registration once the user has entered their details and clicks the register button */
-  const registerSubmit = async (e) => {
+  const userRegistrationSubmission = async (e) => {
     e.preventDefault();
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
@@ -38,7 +38,7 @@ function Register() {
   /* Creating the structure for the Login web page */
   return (
     <div className="login-page">
-      <form onSubmit={registerSubmit}>
+      <form onSubmit={userRegistrationSubmission}>
         <h2>Register</h2>
         <input
           type="text"
@@ -46,7 +46,7 @@ function Register() {
           required
           placeholder="Enter your name"
           value={user.name}
-          onChange={onChangeInput}
+          onChange={userInputChange}
         />
 
         <input
@@ -55,7 +55,7 @@ function Register() {
           required
           placeholder="Enter your email"
           value={user.email}
-          onChange={onChangeInput}
+          onChange={userInputChange}
         />
 
         <input
@@ -65,7 +65,7 @@ function Register() {
           autoComplete="on"
           placeholder="Enter your password"
           value={user.password}
-          onChange={onChangeInput}
+          onChange={userInputChange}
         />
 
         {/* Creating a container that contains the Login and Register buttons, and the display will change

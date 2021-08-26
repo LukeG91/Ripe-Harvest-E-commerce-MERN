@@ -59,8 +59,18 @@ function CreateProduct() {
     /* Setting the dependancies for the useEffect() function */
   }, [param.id, products]);
 
+  /* Creating an event handler to handle user inputs */
+  const handleUserInput = (e) => {
+    /* Deconstructing the information from the target and I am extracting the information I need */
+    const { name, value } = e.target;
+    /* Updating state and I am spreading the information in the products array and I am extracting the name
+       property from the HTML input elements where this function is run and I am setting these properties to 
+       the values that the user enters. */
+    setProduct({ ...product, [name]: value });
+  };
+
   /* Creating an event handler to take care of the uploading of a product */
-  const handleUpload = async (e) => {
+  const productUploadHandler = async (e) => {
     e.preventDefault();
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
@@ -108,7 +118,7 @@ function CreateProduct() {
   };
 
   /* Creating a function to handle the deletion of the image that the user uploads */
-  const handleDestroy = async () => {
+  const imageRemovalHandler = async () => {
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
       /* Using an if statement to check if the user is not an admin user, if the user is not an admin user, then
@@ -135,18 +145,8 @@ function CreateProduct() {
     }
   };
 
-  /* Creating an event handler to handle user inputs */
-  const handleChangeInput = (e) => {
-    /* Deconstructing the information from the target and I am extracting the information I need */
-    const { name, value } = e.target;
-    /* Updating state and I am spreading the information in the products array and I am extracting the name
-       property from the HTML input elements where this function is run and I am setting these properties to 
-       the values that the user enters. */
-    setProduct({ ...product, [name]: value });
-  };
-
   /* Creating an event handler to handle the submission of the form */
-  const handleSubmit = async (e) => {
+  const productSubmissionHandler = async (e) => {
     e.preventDefault();
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
@@ -205,7 +205,7 @@ function CreateProduct() {
 
   /* Creating a variable that stores the display style property and I am setting this based on if there is an image
      that has been uploaded or if there isn't one. */
-  const styleUpload = {
+  const uploadImageStyles = {
     display: images ? "block" : "none",
   };
 
@@ -213,24 +213,29 @@ function CreateProduct() {
   return (
     <div className="create_product">
       <div className="upload">
-        <input type="file" name="file" id="file_up" onChange={handleUpload} />
+        <input
+          type="file"
+          name="file"
+          id="file_up"
+          onChange={productUploadHandler}
+        />
 
         {/* If the loading variable is true then I am going to render the Loading component while the image uploads */}
         {loading ? (
-          <div id="file_img" style={styleUpload}>
+          <div id="file_img" style={uploadImageStyles}>
             <Loading />
           </div>
         ) : (
           /* When the image has uploadd, I am displaying the image on the web page */
-          <div id="file_img" style={styleUpload}>
+          <div id="file_img" style={uploadImageStyles}>
             <img src={images ? images.url : ""} alt="" />
-            <span onClick={handleDestroy}>X</span>
+            <span onClick={imageRemovalHandler}>X</span>
           </div>
         )}
       </div>
 
       {/* Creating a form that the user will use to enter the details of the product they are creating */}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={productSubmissionHandler}>
         <div className="row">
           <label htmlFor="product_id">Product ID:</label>
           <input
@@ -239,37 +244,37 @@ function CreateProduct() {
             id="product_id"
             required
             value={product.product_id}
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
             disabled={onEdit}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="title">Title:</label>
+          <label htmlFor="title">Product title:</label>
           <input
             type="text"
             name="title"
             id="title"
             required
             value={product.title}
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="price">Price:</label>
+          <label htmlFor="price">Product price:</label>
           <input
             type="number"
             name="price"
             id="price"
             required
             value={product.price}
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="description">Description:</label>
+          <label htmlFor="description">Product description:</label>
           <textarea
             type="text"
             name="description"
@@ -277,12 +282,12 @@ function CreateProduct() {
             required
             value={product.description}
             rows="5"
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="content">Content:</label>
+          <label htmlFor="content">Product information:</label>
           <textarea
             type="text"
             name="content"
@@ -290,16 +295,16 @@ function CreateProduct() {
             required
             value={product.content}
             rows="7"
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
           />
         </div>
 
         <div className="row">
-          <label htmlFor="categories">Categories: </label>
+          <label htmlFor="categories">Product categories: </label>
           <select
             name="category"
             value={product.category}
-            onChange={handleChangeInput}
+            onChange={handleUserInput}
           >
             <option value="">Please select a category</option>
             {/* Mapping through the categories array and I am creating HTML option elements

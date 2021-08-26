@@ -7,7 +7,7 @@ export default class PaypalButton extends React.Component {
     const onSuccess = (payment) => {
       console.log("The payment was succeeded!", payment);
       // Binding the "payment" object's value
-      this.props.tranSuccess(payment);
+      this.props.usrPaymentSuccess(payment);
     };
 
     const onCancel = (data) => {

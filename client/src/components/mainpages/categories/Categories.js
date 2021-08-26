@@ -14,7 +14,7 @@ function Categories() {
   const [id, setID] = useState("");
 
   /* Creating a function to handle new product category creation  */
-  const createCategory = async (e) => {
+  const productCategoryCreation = async (e) => {
     e.preventDefault();
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
@@ -64,7 +64,7 @@ function Categories() {
   };
 
   /* Creating a function to handle the editing/updating of a product category */
-  const editCategory = async (id, name) => {
+  const productCategoryUpdate = async (id, name) => {
     /* Updating state with the values that are passed into this function as arguments */
     setID(id);
     setCategory(name);
@@ -72,7 +72,7 @@ function Categories() {
   };
 
   /* Creating a function to handle product deletion */
-  const deleteCategory = async (id) => {
+  const productCategoryRemoval = async (id) => {
     /* Using a try catch block to try code and to catch errors if there are any. */
     try {
       /* Making a DELETE request to the API using the 'id' variable */
@@ -96,7 +96,7 @@ function Categories() {
   return (
     <div className="categories">
       {/* Creating a form for the Admin user to enter the name of the new category they would like to create */}
-      <form onSubmit={createCategory}>
+      <form onSubmit={productCategoryCreation}>
         <label htmlFor="category">Category</label>
         <input
           type="text"
@@ -117,12 +117,16 @@ function Categories() {
             <p>{category.name}</p>
             <div>
               {/* The buttons below are positioned to the right of the name of the category  */}
-              {/* Calling the editCategory function and I am passing in the 'category._id' and 'category.name' as arguments */}
-              <button onClick={() => editCategory(category._id, category.name)}>
+              {/* Calling the productCategoryUpdate function and I am passing in the 'category._id' and 'category.name' as arguments */}
+              <button
+                onClick={() =>
+                  productCategoryUpdate(category._id, category.name)
+                }
+              >
                 Edit
               </button>
-              {/* Calling the deleteCategory function and I am passing in 'category._id' as an argument */}
-              <button onClick={() => deleteCategory(category._id)}>
+              {/* Calling the productCategoryRemoval function and I am passing in 'category._id' as an argument */}
+              <button onClick={() => productCategoryRemoval(category._id)}>
                 Delete
               </button>
             </div>
