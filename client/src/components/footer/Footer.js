@@ -1,6 +1,8 @@
+/* Importing React */
 import React from "react";
 
 function Footer() {
+  /* Creating the structure for this component */
   return (
     <div className="footerParentDiv">
       <div className="footerMainDiv">
@@ -10,6 +12,7 @@ function Footer() {
   );
 }
 
+/* Exporting the component */
 export default Footer;
 
 /* Resource used: 

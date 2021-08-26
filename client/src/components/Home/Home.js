@@ -1,7 +1,9 @@
+/* Importing the libraries and components that I need */
 import React from "react";
 import HomeCarousel from "./carousel/Carousel";
 import Footer from "../footer/Footer";
 
+/* Creating the structure of the Home page */
 function Home() {
   return (
     <div className="mainHomeContainer">
@@ -12,9 +14,11 @@ function Home() {
           goodness and nutrients
         </h4>
       </div>
+      {/* Pulling in the HomeCarousel which displays sliding images on an automatic rotation basis */}
       <div className="homeImageContainer">
         <HomeCarousel />
       </div>
+      {/* Pulling in the Footer component */}
       <div>
         <Footer />
       </div>
@@ -22,6 +26,7 @@ function Home() {
   );
 }
 
+/* Exporting the component */
 export default Home;
 
 /* Resource used: 

@@ -1,3 +1,4 @@
+/* Importing the libraries and images that I need */
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import slider1 from "./testimonial-Images/Testimonial-1.jpg";
@@ -6,6 +7,8 @@ import slider3 from "./testimonial-Images/Testimonial-3.jpg";
 import slider4 from "./testimonial-Images/Testimonial-4.jpg";
 
 function AboutCarousel() {
+  /* Creating an array that stores the images that will be used in the carousel and I am string the
+     caption for each image which will be displayed at the bottom of the image on the carousel */
   const carouselImages = [
     {
       image: slider1,
@@ -24,11 +27,13 @@ function AboutCarousel() {
     },
   ];
 
+  /* Creating a style variable for the captions which I will be using in the carousel */
   const captionStyle = {
     fontSize: "1.5em",
     fontWeight: "bold",
   };
 
+  /* Creating the structure of the carousel */
   return (
     <div>
       <div style={{ textAlign: "center" }}>
@@ -38,6 +43,8 @@ function AboutCarousel() {
             textAlign: "center",
           }}
         >
+          {/* Pulling in the carousel component and I am using the values that I need in order to display the carousel
+              in the way that I would like it to display */}
           <Carousel
             data={carouselImages}
             time={4000}
@@ -45,8 +52,6 @@ function AboutCarousel() {
             height="450px"
             captionStyle={captionStyle}
             radius="10px"
-            // slideNumber={true}
-            // slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={true}
@@ -54,12 +59,8 @@ function AboutCarousel() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            // thumbnails={true}
-            // thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              //   maxWidth: "850px",
-              //   maxHeight: "500px",
               marginTop: "20px",
               marginBottom: "20px",
             }}
@@ -70,6 +71,7 @@ function AboutCarousel() {
   );
 }
 
+/* Exporting the component */
 export default AboutCarousel;
 
 /* Resources used:

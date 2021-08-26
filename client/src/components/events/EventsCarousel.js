@@ -1,3 +1,4 @@
+/* Importing the libraries and images that I need */
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import slider1 from "../events/images/slider1.jpg";
@@ -8,6 +9,8 @@ import slider5 from "../events/images/slider5.jpg";
 import slider6 from "../events/images/slider6.jpg";
 
 function EventsCarousel() {
+  /* Creating an array that stores the images that will be used in the carousel and I am string the
+     caption for each image which will be displayed at the bottom of the image on the carousel */
   const carouselImages = [
     {
       image: slider1,
@@ -25,11 +28,13 @@ function EventsCarousel() {
     },
   ];
 
+  /* Creating a style variable for the captions which I will be using in the carousel */
   const captionStyle = {
     fontSize: "1.5em",
     fontWeight: "bold",
   };
 
+  /* Creating the structure of the carousel */
   return (
     <div>
       <div style={{ textAlign: "center" }}>
@@ -39,6 +44,8 @@ function EventsCarousel() {
             textAlign: "center",
           }}
         >
+          {/* Pulling in the carousel component and I am using the values that I need in order to display the carousel
+              in the way that I would like it to display */}
           <Carousel
             data={carouselImages}
             time={4000}
@@ -46,8 +53,6 @@ function EventsCarousel() {
             height="600px"
             captionStyle={captionStyle}
             radius="10px"
-            // slideNumber={true}
-            // slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={true}
@@ -55,12 +60,8 @@ function EventsCarousel() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            // thumbnails={true}
-            // thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              //   maxWidth: "850px",
-              //   maxHeight: "500px",
               marginTop: "20px",
               marginBottom: "20px",
             }}
@@ -71,6 +72,7 @@ function EventsCarousel() {
   );
 }
 
+/* Exporting the component */
 export default EventsCarousel;
 
 /* Resources used:

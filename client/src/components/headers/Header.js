@@ -1,3 +1,4 @@
+/* Importing the libraries, icons and components that I need */
 import React, { useContext, useState } from "react";
 import { GlobalState } from "../../GlobalState";
 import Menu from "./icons/menu.svg";
@@ -8,19 +9,24 @@ import axios from "axios";
 import Logo from "../../images/CompanyLogo.png";
 
 function Header() {
+  /* Setting state */
   const state = useContext(GlobalState);
   const [isLogged] = state.userAPI.isLogged;
   const [isAdmin] = state.userAPI.isAdmin;
   const [cart] = state.userAPI.cart;
   const [menu, setMenu] = useState(false);
 
+  /* Creating a function that will handle the user logout process */
   const logoutUser = async () => {
+    /* Making a GET request to my API */
     await axios.get("/user/logout");
-    // localStorage.clear();
+    /* Using the 'firstLogin' key to remove the value from local storage */
     localStorage.removeItem("firstLogin");
+    /* Redirecting the user to the home page of the website */
     window.location.href = "/";
   };
 
+  /* Creating a function to return certain header options if the user is logged in as an Admin user  */
   const adminRouter = () => {
     return (
       <>
@@ -37,6 +43,7 @@ function Header() {
     );
   };
 
+  /* Creating a function that will return header options when a user is logged into the website */
   const loggedRouter = () => {
     return (
       <>
@@ -61,10 +68,12 @@ function Header() {
     );
   };
 
+  /* Creating a variable that stores style information */
   const styleMenu = {
     left: menu ? 0 : "-100%",
   };
 
+  /* Creating the structure for the web page */
   return (
     <header>
       <div className="menu" onClick={() => setMenu(!menu)}>
@@ -73,6 +82,8 @@ function Header() {
 
       <div className="logo">
         <h1 className="headerComponentLogo">
+          {/* The logo displayed on the top left of the web page will change based on whether the user is an Admin user
+              or a normal user */}
           <Link to="/" style={{ color: "#548CA8" }}>
             {isAdmin ? "Admin" : "Ripe Harvest"}
           </Link>
@@ -89,10 +100,14 @@ function Header() {
         <li>
           <Link to="/shop">{isAdmin ? "Products" : "Shop"}</Link>
         </li>
+        {/* Displaying the adminRouter() header options if the user is logged in as an Admin user */}
         {isAdmin && adminRouter()}
+        {/* If a normal user has logged in then the header options in the loggedRouter() will be returned */}
         {isLogged ? (
           loggedRouter()
         ) : (
+          /* If a user is not logged in and is simply browsing the wbsite, then the header options below will be
+             displayed */
           <>
             <li>
               <Link to="/">Home</Link>
@@ -111,10 +126,13 @@ function Header() {
             </li>
           </>
         )}
+        {/* The menu below will display when a user browses to th site on a mobile device */}
         <li onClick={() => setMenu(!menu)}>
           <img src={Close} alt="" width="30" className="menu" />
         </li>
       </ul>
+      {/* If the user is an Admin user then return and empty string, else return the cart icon and display the
+          amount of products in the users cart by using the length property on the cart array */}
       {isAdmin ? (
         ""
       ) : (
@@ -129,6 +147,7 @@ function Header() {
   );
 }
 
+/* Exporting the component */
 export default Header;
 
 /* Resource used: 

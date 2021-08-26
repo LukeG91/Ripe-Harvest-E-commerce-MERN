@@ -1,21 +1,26 @@
+/* Importing the library and components that I need */
 import React from "react";
 import EventsCarousel from "../events/EventsCarousel";
 import Footer from "../footer/Footer";
 
 function Events() {
+  /* Creating the structure of the web page */
   return (
     <div>
       <h1 className="EventsPageHeading">Upcoming Events:</h1>
       <div className="eventsCarousel">
+        {/* Pulling in the 'EventsCarousel' component */}
         <EventsCarousel />
       </div>
       <div className="eventsFooterContainer">
+        {/* Pulling in the 'Footer' component */}
         <Footer />
       </div>
     </div>
   );
 }
 
+/* Exporting the component */
 export default Events;
 
 /* Resource used: 

@@ -1,3 +1,4 @@
+/* Importing the library, components and images that I need */
 import React from "react";
 import ownerImage from "../about/images/ripe-harvest-owner.jpeg";
 import Footer from "../footer/Footer";
@@ -8,6 +9,7 @@ import fourthImage from "../about/images/berries.jpg";
 import AboutCarousel from "./AboutCarousel";
 
 function About() {
+  /* Creating the structure of the web page */
   return (
     <>
       <div className="aboutMainContainer">
@@ -50,6 +52,7 @@ function About() {
           />
         </div>
       </div>
+      {/* Creating a customer testimonial section and I am pulling in the 'AboutCarousel' component */}
       <div>
         <h2 className="customerTestimonialsHeading">Customer Testimonials:</h2>
         <AboutCarousel />
@@ -68,11 +71,13 @@ function About() {
           <img src={fourthImage} alt="" />
         </div>
       </div>
+      {/* Pulling in the Footer component */}
       <Footer />
     </>
   );
 }
 
+/* Exporting the component */
 export default About;
 
 /* Resources used:

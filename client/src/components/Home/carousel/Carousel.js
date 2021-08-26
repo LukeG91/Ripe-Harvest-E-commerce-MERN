@@ -1,3 +1,4 @@
+/* Importing the library and images that I need */
 import { Carousel } from "react-carousel-minimal";
 import slider1 from "../../../images/fresh-fruit-bowl-slider.jpg";
 import slider2 from "../../../images/fruit-and-muesli.jpg";
@@ -12,6 +13,8 @@ import slider10 from "../../../images/fresh-fruit-with-madeira-cake.jpg";
 import slider11 from "../../../images/fruit-and-croisant.jpg";
 
 function HomeCarousel() {
+  /* Creating an array that stores the images that will be used in the carousel and I am string the
+     caption for each image which will be displayed at the bottom of the image on the carousel */
   const carouselImages = [
     {
       image: slider1,
@@ -59,11 +62,13 @@ function HomeCarousel() {
     },
   ];
 
+  /* Creating a style variable for the captions which I will be using in the carousel */
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
   };
 
+  /* Creating the structure of the carousel */
   return (
     <div>
       <div style={{ textAlign: "center" }}>
@@ -73,6 +78,8 @@ function HomeCarousel() {
             textAlign: "center",
           }}
         >
+          {/* Pulling in the carousel component and I am using the values that I need in order to display the carousel
+              in the way that I would like it to display */}
           <Carousel
             data={carouselImages}
             time={4000}
@@ -80,8 +87,6 @@ function HomeCarousel() {
             height="600px"
             captionStyle={captionStyle}
             radius="10px"
-            // slideNumber={true}
-            // slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
             dots={true}
@@ -89,12 +94,8 @@ function HomeCarousel() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            // thumbnails={true}
-            // thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              //   maxWidth: "850px",
-              //   maxHeight: "500px",
               marginTop: "20px",
               marginBottom: "20px",
             }}
@@ -105,6 +106,7 @@ function HomeCarousel() {
   );
 }
 
+/* Exporting the component */
 export default HomeCarousel;
 
 /* Resources used:
