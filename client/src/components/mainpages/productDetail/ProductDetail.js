@@ -46,13 +46,13 @@ function ProductDetail() {
           <p>{productDetail.description}</p>
           <p>{productDetail.content}</p>
           <p>Items sold: {productDetail.sold}</p>
-          <Link
+          {/* <Link
             to="/cart"
             className="cart"
             onClick={() => addCart(ProductDetail)}
           >
             Buy Now
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div>

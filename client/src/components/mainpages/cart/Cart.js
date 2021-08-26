@@ -134,12 +134,14 @@ function Cart() {
      an appropriate heading will be displayed  */
   if (cart.length === 0)
     return (
-      <h2 style={{ textAlign: "center", fontSize: "5rem" }}>
+      <h3 style={{ textAlign: "center", fontSize: "3rem" }}>
         There are no items in your shopping cart yet
-      </h2>
+      </h3>
     );
 
   /* creating the JSX structure for the CART page */
+  /* I am showing the relevant information relating to ach product, the Image, title, price, quantity, 
+           description as well as the main information relating to the product(content) */
   return (
     <div>
       {/* Mapping through the cart array and I am displaying each item that the user has added to their cart */}
@@ -155,23 +157,20 @@ function Cart() {
             <h3>R{product.price * product.quantity}</h3>
             <p>{product.description}</p>
             <p>{product.content}</p>
-            {/* Creating a container that will store the increment and decrement buttons as well as each products individual
-                quantity */}
+
             <div className="amount">
               <button onClick={() => decrement(product._id)}> - </button>
               <span>{product.quantity}</span>
               <button onClick={() => increment(product._id)}> + </button>
             </div>
-            {/* Creating a div that contains an 'X' that will call the removeProduct() function when clicked
-                which will remove that specific product from the users shopping cart */}
+
             <div className="delete" onClick={() => removeProduct(product._id)}>
               X
             </div>
           </div>
         </div>
       ))}
-      {/* Creating a container to store the shopping cart total as well as the PayPal button that the user will click to
-          make the payment */}
+
       <div className="total">
         <h3>Total: R {total}</h3>
         <PaypalButton total={total} tranSuccess={tranSuccess} />

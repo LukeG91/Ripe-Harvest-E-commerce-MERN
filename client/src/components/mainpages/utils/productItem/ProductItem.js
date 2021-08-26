@@ -29,7 +29,6 @@ function ProductItem({ product, isAdmin, deleteProduct, handleCheck }) {
         <p className="productItemComponentDescription">{product.description}</p>
       </div>
 
-      {/* Rendering the BtnRender component */}
       <BtnRender product={product} deleteProduct={deleteProduct} />
     </div>
   );

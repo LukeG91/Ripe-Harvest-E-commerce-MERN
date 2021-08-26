@@ -43,9 +43,8 @@ function UserAPI(token) {
 
   /* Creating a function to add items to a users cart which can only be done when a user has logged in */
   const addCart = async (product) => {
-    /* Using an if statement to check if the isLogged variable is false and if it is then an appropriate message will be 
-       returned advising the user to login before trying to purchase products */
-    if (!isLogged) return alert("Please login in order to purchase products.");
+    if (!isLogged)
+      return alert("Please login before trying to purchase products.");
 
     /* Using the every() method which will return true if every element within the cart array
        passes the condition/test set in the function that is parsed into the every() method */

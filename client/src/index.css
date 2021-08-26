@@ -94,6 +94,34 @@ button {
   .logoContainer{
     left: 570px;
   }
+
+  .adminLogo{
+    position: absolute;
+    left: 155px;
+  }
+
+  .userEmailInfo{
+    position: absolute;
+    left: 800px;
+  }
+
+  .userRoleInfo{
+    position: absolute;
+    left: 1050px;
+  }
+  .App{
+    max-width: 1500px;
+  }
+
+  .CompanyLogo{
+    position: absolute;
+    right: 38px;
+    bottom: -50px;
+  }
+
+  .delete-all{
+    margin-right: 69px;
+  }
 }
 
 @media (max-width: 1750px){
@@ -108,7 +136,22 @@ button {
   }
   
   .logoContainer{
-    left: 325px;
+    left: 365px;
+  }
+
+  .adminLogo{
+    position: absolute;
+    left: -42px;
+  }
+
+  .userEmailInfo{
+    position: absolute;
+    left: 580px;
+  }
+
+  .userRoleInfo{
+    position: absolute;
+    left: 810px;
   }
 }
 
