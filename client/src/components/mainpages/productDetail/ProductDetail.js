@@ -37,7 +37,7 @@ function ProductDetail() {
         />
         <div className="box-detail">
           <div className="row">
-            <h2>{productDetail.title}</h2>
+            <h2 className="productDetailTitle">{productDetail.title}</h2>
             <p className="productDetailComponentID">
               #id: {productDetail.product_id}
             </p>

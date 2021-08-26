@@ -20,7 +20,7 @@ function ProductsAPI() {
       const res = await axios.get(
         /* Querying the relevant API route and I am limiting the initial result to 12 products */
         `/api/products?limit=${
-          page * 9
+          page * 12
         }&${category}&${sort}&title[regex]=${search}`
       );
       /* Updating state */
