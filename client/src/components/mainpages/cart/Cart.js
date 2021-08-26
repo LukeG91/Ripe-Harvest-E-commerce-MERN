@@ -4,6 +4,7 @@ import { GlobalState } from "../../../GlobalState";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import PaypalButton from "./PaypalButton";
+import backGroundImage from "../cart/images/pexels-karolina-grabowska-5632401.jpg";
 
 function Cart() {
   /* Setting state */
@@ -134,9 +135,25 @@ function Cart() {
      an appropriate heading will be displayed  */
   if (cart.length === 0)
     return (
-      <h3 style={{ textAlign: "center", fontSize: "3rem" }}>
-        There are no items in your shopping cart yet
-      </h3>
+      <div style={{ width: "100%", height: "100vh" }}>
+        <h1
+          style={{
+            textAlign: "center",
+            textDecoration: "underline",
+            marginBottom: "5px",
+          }}
+        >
+          Add your first product to your shopping cart 😃{" "}
+        </h1>
+        <img
+          src={backGroundImage}
+          alt="background-image"
+          style={{ objectFit: "cover", width: "100%", height: "92vh" }}
+        />
+      </div>
+      // <h3 style={{ textAlign: "center", fontSize: "3rem" }}>
+      //   There are no items in your shopping cart yet
+      // </h3>
     );
 
   /* creating the JSX structure for the CART page */

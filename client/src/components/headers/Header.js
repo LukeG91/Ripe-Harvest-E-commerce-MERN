@@ -27,7 +27,7 @@ function Header() {
   };
 
   /* Creating a function to return certain header options if the user is logged in as an Admin user  */
-  const adminRouter = () => {
+  const adminUserOptions = () => {
     return (
       <>
         <li>
@@ -44,7 +44,7 @@ function Header() {
   };
 
   /* Creating a function that will return header options when a user is logged into the website */
-  const loggedRouter = () => {
+  const normalLoginOptions = () => {
     return (
       <>
         <li>
@@ -100,11 +100,11 @@ function Header() {
         <li>
           <Link to="/shop">{isAdmin ? "Products" : "Shop"}</Link>
         </li>
-        {/* Displaying the adminRouter() header options if the user is logged in as an Admin user */}
-        {isAdmin && adminRouter()}
-        {/* If a normal user has logged in then the header options in the loggedRouter() will be returned */}
+        {/* Displaying the adminUserOptions() header options if the user is logged in as an Admin user */}
+        {isAdmin && adminUserOptions()}
+        {/* If a normal user has logged in then the header options in the normalLoginOptions() will be returned */}
         {isLogged ? (
-          loggedRouter()
+          normalLoginOptions()
         ) : (
           /* If a user is not logged in and is simply browsing the wbsite, then the header options below will be
              displayed */
