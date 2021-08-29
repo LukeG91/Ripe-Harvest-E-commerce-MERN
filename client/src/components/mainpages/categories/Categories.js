@@ -97,7 +97,7 @@ function Categories() {
     <div className="categories">
       {/* Creating a form for the Admin user to enter the name of the new category they would like to create */}
       <form onSubmit={productCategoryCreation}>
-        <label htmlFor="category">Category</label>
+        <label htmlFor="category">Product categories</label>
         <input
           type="text"
           name="category"

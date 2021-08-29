@@ -319,7 +319,9 @@ function CreateProduct() {
 
         {/* Creating a button and the text that is displayed on the button will be dependant on whether
             or not the onEdit variable is true */}
-        <button type="submit">{onEdit ? "Update" : "Create"}</button>
+        <button type="submit">
+          {onEdit ? "Update Product" : "Create Product"}
+        </button>
       </form>
     </div>
   );

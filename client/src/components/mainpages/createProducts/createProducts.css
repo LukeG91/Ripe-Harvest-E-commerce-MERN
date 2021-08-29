@@ -24,7 +24,8 @@
 }
 
 #file_up::before{
-    content: "+";
+    content: "Click here to upload an image";
+    text-decoration: underline;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -32,7 +33,7 @@
     left: 0;
     background: #fff;
     color: rgb(84, 140, 168);
-    font-size: 17rem;
+    font-size: 1.5rem;
     text-align: center;
     cursor: pointer;
     margin: auto;
@@ -87,7 +88,7 @@
 }
 
 .create_product form button {
-    width: 120px;
+    width: 180px;
     height: 40px;
     background: black;
     color: #fff;

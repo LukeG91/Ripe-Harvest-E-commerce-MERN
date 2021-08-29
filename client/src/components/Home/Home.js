@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="mainHomeContainer">
       <div className="subHomeContainer">
-        <h1 className="homePageMainHeading">Welcome to Ripe Harvest</h1>
+        <h1 className="homePageMainHeading">Welcome to RipeHarvest</h1>
         <h4 className="homePageSlogan">
           Providing real health by supplying whole foods that are packed with
           goodness and nutrients

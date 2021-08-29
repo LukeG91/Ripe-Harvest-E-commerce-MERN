@@ -14,8 +14,8 @@ header .logo{
 }
 
 header a{
-    text-transform: uppercase;
     color: #555;
+    text-transform: uppercase;
 }
 
 header ul li{
