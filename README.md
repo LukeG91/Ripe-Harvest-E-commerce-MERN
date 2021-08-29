@@ -110,7 +110,7 @@ To run tests for the back-end of the application, do the following:
 
 <a name="screenshots"></a>
 
-## ScreenshScrSots of the website
+## Screenshots of the website
 
 #### Home page
 
